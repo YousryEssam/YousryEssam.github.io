@@ -11,6 +11,12 @@
             margin: 20px;
             line-height: 1.6;
         }
+        img {
+            width: 300px;
+            border-radius: 60%;
+            display: block;
+            margin-bottom: 30px;
+        }
         h1, h2 {
             color: #333;
         }
@@ -43,19 +49,52 @@
         .skills div {
             margin-right: 20px;
         }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 300px; 
+            height: 320px;
+            border-radius: 50%; 
+            margin-right: 100px;
+        }
+        .header .name-title {
+            display: flex;
+            flex-direction: column;
+        }
+        .name-title h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .name-title p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .contact-info a {
+            display: block;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Yousry Essam Ayoub</h1>
-        <p>Software Engineer</p>
-        <div class="contact-info">
-            <a href="mailto:yousry.essam.ayoub@gmail.com">yousry.essam.ayoub@gmail.com</a>
-            <a href="tel:+201289529751">+201289529751</a>
-            <a href="https://github.com/YousryEssam">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/yousryessam">LinkedIn Profile</a>
+        <div class="header">
+            <div class="name-title">
+                <h1>Yousry Essam Ayoub</h1>
+                <p><b> Software Engineer</b></p>
+                <div class="contact-info">
+                    <a href="mailto:youssry.essam2111@gmail.com"> youssry.essam2111@gmail.com </a>
+                    <a href="mailto:yousry.essam.ayoub@gmail.com">yousry.essam.ayoub@gmail.com</a>
+                    <a href="tel:+201289529751">+201289529751</a>
+                    <a href="https://github.com/YousryEssam">GitHub Profile</a>
+                    <a href="https://www.linkedin.com/in/yousryessam">LinkedIn Profile</a>
+                </div>
+            </div>
+            <img src="Images/YousryEssam.jpg" alt="Yousry Essam Ayoub">
         </div>
     </header>
+
 
     <section class="section">
         <h2 class="section-title">Summary</h2>
