@@ -7,39 +7,151 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 20px;
+            line-height: 1.6;
         }
-        .header, .contact, .section {
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a {
+            display: block;
+        }
+        .section {
             margin-bottom: 20px;
         }
-        .header h1 {
-            margin: 0;
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #444;
         }
-        .contact a {
-            display: block;
-            text-decoration: none;
-            color: #000;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div {
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header>
         <h1>Yousry Essam Ayoub</h1>
         <p>Software Engineer</p>
-    </div>
-    
-    <div class="contact">
-        <a href="mailto:yousry.essam.ayoub@gmail.com">yousry.essam.ayoub@gmail.com</a>
-        <a href="tel:+201289529751">+201289529751</a>
-        <a href="https://github.com/YousryEssam">GitHub Profile</a>
-        <a href="https://www.linkedin.com/in/yousryessam">LinkedIn Profile</a>
-    </div>
+        <div class="contact-info">
+            <a href="mailto:yousry.essam.ayoub@gmail.com">yousry.essam.ayoub@gmail.com</a>
+            <a href="tel:+201289529751">+201289529751</a>
+            <a href="https://github.com/YousryEssam">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/yousryessam">LinkedIn Profile</a>
+        </div>
+    </header>
 
-    <div class="section">
-        <h2>Summary</h2>
-        <p>Fresh Computer Science graduate from Assiut University, skilled in C, C++, Java, Python, GO, and C#.</p>
-    </div>
-    
-    <!-- Add more sections for Education, Experience, Projects, etc. -->
+    <section class="section">
+        <h2 class="section-title">Summary</h2>
+        <p>
+            Fresh Computer Science graduate from Assiut University, skilled in C, C++, Java, Python, GO, and C#. Experienced in MySQL and completed projects like AI-generated audiobooks and a distributed ATM system. Achieved high rankings in programming competitions and volunteered as a C++ instructor and mentor. Eager to apply technical skills to innovative software engineering projects.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+        <p>
+            <strong>Faculty of Computer Science and Information Technology - Assiut University</strong><br>
+            Bachelor's degree in Computer Science<br>
+            Oct 2020 – Jul 2024 | Assiut, Egypt
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        <ul>
+            <li>
+                <strong>Petra Software Ind, Summer Internship</strong><br>
+                Jul 2023 – Aug 2023 | Assiut, Egypt
+                <ul>
+                    <li>Utilized MySQL for database design and management in real-world projects.</li>
+                    <li>Developed skills in writing high-quality, optimized SQL queries.</li>
+                    <li>Managed and completed daily assignments, ensuring timely and accurate database updates.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Projects</h2>
+        <ul>
+            <li>
+                <strong>ShahraZad (Graduation Project, A+ Grade)</strong><br>
+                Developed an advanced system that transforms any story or book into an engaging audio experience.
+                <ul>
+                    <li>Emotional Text-to-Speech (ETTS) System: Generates expressive and dynamic speech to match the emotional tone of the content.</li>
+                    <li>Voice Customization: Allows users to choose their preferred voice for narration.</li>
+                    <li>Bilingual Support: Fully supports both Arabic and English languages.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Distributed Simple ATM System</strong><br>
+                A simple distributed banking ATM system implemented in Go and MySQL, using a master-slave architecture to handle transactions efficiently and ensure data consistency across distributed nodes.
+            </li>
+            <li>
+                <strong>Devices Price Classification System</strong><br>
+                Built a machine learning model to classify electronic devices into price ranges based on features like brand and specifications.
+            </li>
+            <li>
+                <strong>Endless Runner Game with Unity</strong><br>
+                Created an endless runner game in Unity, featuring dynamic gameplay, randomly generated obstacles, and core mechanics like character movement and score tracking.
+            </li>
+            <li>
+                <strong>Snake Game</strong><br>
+                Snake game built with Unity, C#, and Visual Studio.
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Achievements</h2>
+        <ul>
+            <li>51st Place at the ECPC 2024 Finals (Out of 397 teams)</li>
+            <li>29th Place at the ECPC 2024 Qualifications (Out of 447 teams)</li>
+            <li>22nd Place at the ECPC 2023 Qualifications (Out of 235 teams)</li>
+            <li>24th Place at the ECPC 2022 Qualifications (Out of 237 teams)</li>
+            <li>19th Place at the Programming Warfare 2023 || Upper Egypt Programming Competition (Out of 150 teams)</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Volunteering</h2>
+        <ul>
+            <li>
+                <strong>ICPC EELU Community, Instructor & Mentor</strong><br>
+                Mar 2024 – Jun 2024 | Assiut, Egypt<br>
+                Taught C++ programming and problem-solving skills as a volunteer instructor.
+            </li>
+            <li>
+                <strong>ICPC Assiut Community, Mentor for C++ and Problem Solving</strong><br>
+                Oct 2021 – Jun 2024 | Assiut, Egypt<br>
+                Guided peers in C++ programming and problem solving.
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+            <div><strong>Programming:</strong> C, C++, Java, Python, Go, C#</div>
+            <div><strong>Database:</strong> MySQL</div>
+            <div><strong>Other:</strong> OOP, Data Structures, Algorithms, Testing & Debugging</div>
+        </div>
+    </section>
 </body>
 </html>
