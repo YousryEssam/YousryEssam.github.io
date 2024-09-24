@@ -390,12 +390,12 @@ span{
     padding: 5rem 9%;
     background-color: black; /* Match background with the rest of your site */
     color: white; /* Ensure text is visible */
-    margin-bottom: 4rem; /* Space below the projects section */
+    margin-bottom: 5rem; /* Space below the projects section */
 }
 
 .projects h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
     color: #b74b4b; /* Match your theme color */
     text-align: center; /* Center the title */
 }
