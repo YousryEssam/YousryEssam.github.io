@@ -1,7 +1,7 @@
 # YousryEssam.github.io
 ## Welcome to My CV Website
 
-This is a web-based version of my resume, created using HTML and hosted on GitHub Pages. You can visit the live website by following the link below:
+This is a web-based version of my resume, created using HTML , CSS and JavaScript. Hosted on GitHub Pages. You can visit the live website by following the link below:
 
 - [Visit my CV Website](https://YousryEssam.github.io)
 

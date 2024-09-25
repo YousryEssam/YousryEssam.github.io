@@ -9,7 +9,6 @@
     <link rel="icon" href="Icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
     <header>
         <a href="#" class="logo"> Yousry Essam Ayoub</a>
         <nav>
@@ -20,6 +19,7 @@
             <a href="#achievements" id="achievements-link"> ACHIEVEMENTS</a>
             <a href="#volunteering" id="volunteering-link"> VOLUNTEERING</a>
             <a href="#skills" id="skills-link"> SKILLS</a>
+            <!-- <a href="#contact" id="contact-link">CONTACT US</a> Added Contact Us -->
          </nav>
     </header>
     
@@ -31,7 +31,11 @@
             <br>
             <br>
             <h1>Hello, I'm <span>Yousry Essam</span></h1>
-            <h3 class="typing-text">also, I'm a <br> <span></span></h3>
+            <h3 class="typing-text" >
+                I'm a 
+                <br> 
+                <span></span>
+            </h3>
             <br>
             <br>
             <br>
@@ -47,12 +51,12 @@
                 <a href="https://twitter.com/Yousry__Essam"> <i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/yousry__essam"> <i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.hackerrank.com/profile/Yousry_Essam"> <i class="fa-brands fa-hackerrank"></i></a>
+                <a href="https://www.youtube.com/@Yousry_Essam"> <i class="fa-brands fa-youtube"></i></a>
             </div>
-            <a href="#" class="btn">Hire Me</a>
+            <a href="https://drive.google.com/drive/folders/1Z73y3BaZLPars2UJrMFBgqyng6VEb1lJ?usp=sharing" class="btn" target="_blank">See My Resume</a>
         </div>
     
     </section>
-
 
     <section id="education" class="education">
         <br>
@@ -84,35 +88,81 @@
         </div>
     </section>
     
-
     <section id="projects" class="projects">
         <br>
         <br>
         <br>
         <h2>Projects</h2>
         <div class="projects-content">
-            <h3>ShahraZad (<strong>Graduation Project, A+ Grade</strong>)</h3>
-            <p>ShahraZad is an innovative audiobook service that transforms any story or book (users can upload their own) into an engaging audio experience. It features an Emotional Text-to-Speech (ETTS) system that goes beyond simply reading words. The ETTS system analyzes the text, identifies emotions, and adjusts the narration accordingly, offering expressive storytelling that brings the book to life.</p>
-            <ul>
-                <li>Explores voice cloning, a cutting-edge feature that enhances the audiobook experience. ShahraZad can replicate the voices of well-known narrators or celebrities, adding a unique, personalized dimension to the narration.</li>
-                <li>Supports both English and Arabic books (currently without emotional expression in Arabic), ensuring a broader audience can enjoy the magic of audiobooks.</li>
-                <li>Developed using Python, utilizing libraries like Google Text-to-Speech (gTTS) and PyDub for audio processing.</li>
-            </ul>
-            
-            <h3> Distributed Simple ATM System 
-                <a href="https://github.com/YousryEssam/Distributed-System-Using-Golang" target="_blank">Project Link</a> 
-            </h3>
-            <p>A simple distributed banking ATM system implemented in Go and MySQL, using a master-slave architecture to handle transactions efficiently and ensure data consistency across distributed nodes.</p>
-            
-            <h3> Devices Price Classification System
-                <a href="https://github.com/YousryEssam/Devices-Price-Classification-System" target="_blank">Project Link</a>
-            </h3>
-            <p>Built a machine learning model to classify electronic devices into price ranges based on features like brand and specifications.</p>
-            
-            <h3> Endless Runner Game with Unity 
-                <a href="https://github.com/YousryEssam/Endless-runner-game-with-unity" target="_blank">Project Link</a>
-            </h3>
-            <p>Created an endless runner game in Unity, featuring dynamic gameplay, randomly generated obstacles, and core mechanics like character movement and score tracking.</p>
+    
+            <div class="project-item">
+                <h3>ShahraZad (<strong>Graduation Project, A+ Grade</strong>)</h3>
+                <div class="project-description">
+                    <p>ShahraZad is an innovative audiobook service that transforms any story or book into an engaging audio experience through an advanced Emotional Text-to-Speech (ETTS) system. ETTS not only reads the text but also analyzes emotions and adjusts the narration to offer expressive storytelling. Additionally, ShahraZad leverages voice cloning technology, allowing users to enjoy their favorite stories narrated by well-known voices, adding a personalized touch. The platform also supports Arabic books, with plans to introduce emotional expression for this language in the future.</p>
+                </div>
+                <div class="project-tools">
+                    <h4>Tools & Technologies:</h4>
+                    <ul>
+                        <li>PyDub</li>
+                        <li>MySQL</li>
+                        <li>Python</li>
+                        <li>Flutter</li>
+                        <li>FastAPI</li>
+                        <li>Deep learning</li>
+                        <li>Machine learning </li>
+                    </ul>
+                </div>
+                <a href="https://youtu.be/NjkjBzdcSJI">View Project Demo</a>
+            </div>
+    
+            <div class="project-item">
+                <h3>Distributed Simple ATM System</h3>
+                <div class="project-description">
+                    <p>A Go-based distributed banking ATM system using master-slave architecture for efficient transactions.</p>
+                </div>
+                <div class="project-tools">
+                    <h4>Tools & Technologies:</h4>
+                    <ul>
+                        <li>Go</li>
+                        <li>MySQL</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/YousryEssam/Distributed-System-Using-Golang" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project-item">
+                <h3>Devices Price Classification System</h3>
+                <div class="project-description">
+                    <p>A machine learning model classifying electronic devices into price ranges based on features like brand and specifications.</p>
+                </div>
+                <div class="project-tools">
+                    <h4>Tools & Technologies:</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>scikit-learn</li>
+                        <li>Pandas</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/YousryEssam/Devices-Price-Classification-System" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project-item">
+                <h3>Endless Runner Game with Unity</h3>
+                <div class="project-description">
+                    <p>A Unity-based endless runner game featuring randomly generated obstacles and dynamic gameplay.</p>
+                </div>
+                <div class="project-tools">
+                    <h4>Tools & Technologies:</h4>
+                    <ul>
+                        <li>Unity</li>
+                        <li>C#</li>
+                        <li>Blender (for 3D models)</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/YousryEssam/Endless-runner-game-with-unity" target="_blank">View Project</a>
+            </div>
+    
         </div>
     </section>
     
@@ -120,7 +170,7 @@
         <br>
         <br>
         <br>
-        <h2>Achievements</h2>
+        <h2> </h2>
         <div class="achievements-content">
             <div class="achievement-item">
                 <img src="Images/ECPC 2024.jpg" alt="ECPC 2024 Finals Certificate" />
@@ -203,34 +253,85 @@
                 <ul>
                     <li>C</li>
                     <li>C++</li>
-                    <li>SQL</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Go</li>
                     <li>C#</li>
+                    <li>Go</li>
+                    <li>SQL</li>
+                    <li>Java </li>
+                    <li>Python</li>
+                    <li>JavaScript </li>
                 </ul>
             </div>
             <div class="skill-category">
                 <h3>Tools</h3>
                 <ul>
-                    <li>MySQL</li>
                     <li>Git</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>MySQL </li>
                     <li>Visual Studio </li>
                     <li>Visual Studio Code</li>
-                    <li>MySQL Workbench</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <h3>Soft Skills</h3>
                 <ul>
+                    <li>Teamwork</li>
                     <li>Mentoring</li>
                     <li>Leadership</li>
                     <li>Working under Pressure</li>
-                    <li>Teamwork</li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <section class="contact-us" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Email: <a href="mailto:yousry.essam.ayoub@gmail.com">yousry.essam.ayoub@gmail.com</a></p>
+                <!-- <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p> -->
+                <p>Location: Egypt</p>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Yousry Essam Ayoub</h3>
+                <p>Computer Science Graduate | Competitive Programmer | Software Developer</p>
+                <p>&copy; 2024 All Rights Reserved</p>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://github.com/YousryEssam"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yousryessam"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/Yousry__Essam"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/yousry__essam"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:youssry.essam2111@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Get all sections and links
@@ -267,7 +368,5 @@
             });
         });
     </script>
-    
-     
 </body>
 </html>
