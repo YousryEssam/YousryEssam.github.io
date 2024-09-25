@@ -718,7 +718,6 @@ span{
 
 
 /* Footer */
-
 footer {
     background-color: #333;
     color: white;
@@ -741,18 +740,15 @@ footer {
     margin: 5px 0;
     font-size: 14px;
 }
-
 .footer-social-icons {
     margin-top: 10px;
 }
-
 .footer-social-icons a {
     color: white;
     margin: 0 10px;
     font-size: 20px;
     text-decoration: none;
 }
-
 .footer-social-icons a:hover {
     color: #b74b4b;
 }
