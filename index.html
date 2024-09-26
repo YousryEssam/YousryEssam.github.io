@@ -9,8 +9,13 @@
     <link rel="icon" href="Icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    
+    <div id="progress-bar"></div>    
     <header>
-        <a href="#" class="logo"> Yousry Essam Ayoub</a>
+        <a href="#" class="logo">
+             Yousry's Portfolio
+             <!-- <img src="images/MyLogo.png" alt="Logo" class="logo-img"> -->
+        </a>
         <nav>
             <a href="#home" id="home-link"> HOME</a>
             <a href="#education" id="education-link"> EDUCATION</a>
@@ -22,7 +27,7 @@
             <a href="#contact" id="contact-link">CONTACT US</a>
          </nav>
     </header>
-    
+
     <section id="home" class="home">
         <div class="home-img">
             <img src="Images/YousryEssam.jpg" alt="Yousry Essam">
@@ -170,45 +175,45 @@
         <br>
         <br>
         <br>
-        <h2> </h2>
+        <h2> Achievements </h2>
         <div class="achievements-content">
             <div class="achievement-item">
-                <img src="Images/ECPC 2024.jpg" alt="ECPC 2024 Finals Certificate" />
                 <h3>51st Place at the ECPC 2024 Finals</h3>
                 <p>Out of 397 teams in the Egyptian Collegiate Programming Contest finals.</p>
+                <img src="Images/ECPC 2024.jpg" alt="ECPC 2024 Finals team" />
                 <a href="https://drive.google.com/file/d/1K3ZtpTiUhbTCrFIHaLNg5bhTXVzVr-11/view" target="_blank">View Certificate</a>
             </div>
     
             <div class="achievement-item">
-                <img src="Images/ECPC 2024.jpg" alt="ECPC 2024 Qualifications Certificate" />
                 <h3>29th Place at the ECPC 2024 Qualifications</h3>
                 <p>Out of 447 teams on day 6.</p>
+                <img src="Images/ECPC 2024.jpg" alt="ECPC 2024 Qualifications team" />
                 <a href="https://drive.google.com/file/d/1tfS3Hd6plaOlQWEIeAB-iJz9CO8KecZv/view" target="_blank">View Certificate</a>
             </div>
     
             <div class="achievement-item">
-                <img src="Images/ECPC2023.JPG" alt="ECPC 2023 Qualifications Certificate" />
                 <h3>22nd Place at the ECPC 2023 Qualifications</h3>
                 <p>Out of 235 teams on day 10.</p>
+                <img src="Images/ECPC2023.JPG" alt="ECPC 2023 Qualifications team" />
                 <a href="https://drive.google.com/file/d/1HJkiI1zEoqpDb47EB7k88fZ7auuNMJdD/view" target="_blank">View Certificate</a>
             </div>
     
             <div class="achievement-item">
-                <img src="Images/ECPC2022.JPG" alt="ECPC 2022 Qualifications Certificate" />
                 <h3>24th Place at the ECPC 2022 Qualifications</h3>
                 <p>Out of 237 teams.</p>
+                <img src="Images/ECPC2022.JPG" alt="ECPC 2022 Qualifications team" />
                 <a href="https://drive.google.com/file/d/1z-8NcnmrvZB57uoht5Q6zQyfIDz9Nn6i/view" target="_blank">View Certificate</a>
             </div>
             <div class="achievement-item">
-                <img src="Images/ECPC2021.JPG" alt="ECPC 2021 Qualifications Certificate" />
                 <h3>43rd Place at the ECPC 2021 Qualifications</h3>
                 <p>Out of 120 teams.</p>
+                <img src="Images/ECPC2021.JPG" alt="ECPC 2021 Qualifications team" />
                 <a href="https://drive.google.com/file/d/1dxbtr9M28KRWtOHWUxRfEZ8kqi5gGegU/view?usp=sharing" target="_blank">View Certificate</a>
             </div>
             <div class="achievement-item">
-                <img src="Images/PWD.jpg" alt=" Programming Warfare 2023 || Upper Egypt Programming Competition" />
                 <h3>19th Place at the Programming Warfare 2023 || Upper Egypt Programming Competition</h3>
                 <p>Out of 150 teams.</p>
+                <img src="Images/PWD.jpg" alt=" Programming Warfare 2023 || Upper Egypt Programming Competition team" />
             </div>
         </div>
     </section>
@@ -222,12 +227,15 @@
             <div class="volunteering-item">
                 <h3>ICPC EELU Community, Instructor & Mentor</h3>
                 <p>Mar 2024 – Jun 2024 | Assiut, Egypt</p>
-                <p>Taught C++ programming and problem-solving skills as a volunteer instructor.</p>
+                <p>As a volunteer instructor in a student activity, I teach C++ programming and problem solving skills. This role involves creating lesson plans,
+                    conducting interactive sessions, and providing guidance on debugging and algorithm development, allowing me to share my knowledge while
+                    enhancing my teaching and mentoring abilities.</p>
             </div>
             <div class="volunteering-item">
                 <h3>ICPC Assiut Community, Mentor for C++ and Problem Solving</h3>
                 <p>Oct 2021 – Jun 2024 | Assiut, Egypt</p>
-                <p>Guided peers in C++ programming and problem solving.</p>
+                <p>As a volunteer mentor in a student activity, I guided peers in C++ programming and problem solving. This role allowed me to assist others
+                    while honing my skills in communication, debugging, searching, and mentoring.</p>
             </div>
         </div>
     </section>
@@ -314,7 +322,6 @@
             </div>
         </div>
     </section>
-    
 
     <footer>
         <div class="footer-container">
@@ -333,40 +340,6 @@
         </div>
     </footer>
 
-    <script>
-        // Get all sections and links
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll("nav a");
-    
-        window.addEventListener("scroll", () => {
-            let currentSection = "home";  // Default to 'home' section
-    
-            // Check each section's position relative to the scroll
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-    
-                if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-                    currentSection = section.getAttribute("id");
-                }
-            });
-    
-            // Remove active class from all links and add it to the current section link
-            navLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (link.getAttribute("href").includes(currentSection)) {
-                    link.classList.add("active");
-                }
-            });
-        });
-    
-        // Optional: Click event to manage active state immediately
-        navLinks.forEach(link => {
-            link.addEventListener("click", () => {
-                navLinks.forEach(nav => nav.classList.remove("active"));
-                link.classList.add("active");
-            });
-        });
-    </script>
+    <script src="Script.js"></script>
 </body>
 </html>
