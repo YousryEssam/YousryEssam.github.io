@@ -3,9 +3,8 @@ const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
-    let currentSection = "home";  // Default to 'home' section
+    let currentSection = "home";
 
-    // Check each section's position relative to the scroll
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -15,7 +14,6 @@ window.addEventListener("scroll", () => {
         }
     });
 
-    // Remove active class from all links and add it to the current section link
     navLinks.forEach((link) => {
         link.classList.remove("active");
         if (link.getAttribute("href").includes(currentSection)) {
@@ -31,6 +29,7 @@ navLinks.forEach(link => {
         link.classList.add("active");
     });
 });
+
 // Function to update the progress bar
 window.onscroll = function() {
 var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -38,3 +37,9 @@ var height = document.documentElement.scrollHeight - document.documentElement.cl
 var scrolled = (winScroll / height) * 100;
 document.getElementById("progress-bar").style.width = scrolled + "%";
 };
+
+// Dark - Light mode switch
+function darkModeSwitch(){
+    var darkSwitch = document.getElementById("mainBody");
+    darkSwitch.classList.toggle("darkLightSwitch");
+}
