@@ -687,45 +687,51 @@ span {
   line-height: 2.8rem;
 }
 
-/* Skills Section */
+/******************************************************************************************/
+/***************************************Skills Section*************************************/
+
 .skills {
-  background-color: var(--backgroundColor);
   padding: 5rem 9%;
   color: var(--fontColor);
+  background-color: var(--backgroundColor);
 }
 
 .section-title {
   font-size: 4rem;
   font-weight: 700;
   text-align: center;
-  color: var(--themeColor);
   margin-bottom: 4rem;
+  color: var(--themeColor);
 }
 
 .skills-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   gap: 4rem;
+  display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .skill-category {
-  background-color: var(--boxColor);
-  border: 1px solid var(--themeColor);
+  width: 45%;
   padding: 2rem;
   border-radius: 10px;
-  width: 22%;
+  border: 1px solid var(--themeColor);
+  background-color: var(--boxColor);
+}
+
+.skill-category:hover{
   box-shadow: 0 0 25px var(--themeColor);
 }
 
 .skill-category h3 {
-  font-size: 2.4rem;
-  color: var(--themeColor);
+  font-size: 2.8rem;
   margin-bottom: 1.5rem;
+  color: var(--themeColor);
 }
 
 .skill-category ul {
+  padding: 10px;
   list-style-type: none;
 }
 
@@ -747,39 +753,45 @@ span {
   }
 }
 
-/* Contact Us */
+/******************************************************************************************/
+/***********************************Contact Us*********************************************/
 .contact {
-  background-color: var(--backgroundColor);
   padding: 5rem 9%;
   color: var(--fontColor);
+  background-color: var(--backgroundColor);
 }
 
 .section-title {
   font-size: 4rem;
   font-weight: 700;
   text-align: center;
-  color: var(--themeColor);
   margin-bottom: 4rem;
+  color: var(--themeColor);
 }
 
 .contact-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   gap: 4rem;
+  display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .contact-info,
 .contact-form {
+  padding: 2rem;
+  width: 70%;
+  border-radius: 10px;
   background-color: var(--boxColor);
   border: 1px solid var(--themeColor);
-  padding: 2rem;
-  border-radius: 10px;
-  width: 40%;
+  
+}
+.contact-info:hover{
   box-shadow: 0 0 25px var(--themeColor);
 }
-
+.contact-form:hover{
+  box-shadow: 0 0 25px var(--themeColor);
+}
 .contact-info h3 {
   font-size: 2.4rem;
   color: var(--themeColor);
