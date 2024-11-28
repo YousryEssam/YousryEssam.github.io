@@ -1,13 +1,14 @@
 # YousryEssam.github.io
-## Welcome to My CV Website
+## Welcome to My portfolio
 
 This is a web-based version of my resume, created using HTML , CSS and JavaScript. Hosted on GitHub Pages. You can visit the live website by following the link below:
 
-- [Visit my CV Website](https://YousryEssam.github.io)
+- [Visit my portfolio](https://YousryEssam.github.io)
 
 ## About Me
 
-I am a fresh Computer Science graduate from Assiut University with strong skills in various programming languages including C, C++, Java, Python, Go, and C#. I have experience working on real-world projects, internships, and programming competitions. Some of my notable achievements include:
+### Software Developer | Competitive Programmer | ITI Trainee @ PDW & CRM Track
+Fresh Computer Science graduate from Assiut University with strong expertise in programming languages such as C, C++, Java, Python, Go, and C#. Accomplished competitive programmer with high rankings in coding contests and active profiles on Codeforces, LeetCode, and HackerRank. Experienced in projects. Currently pursuing the Professional Development & BI-infused CRM training program at ITI's Assiut branch, enhancing technical and professional skills. Passionate about software development, mentoring, and contributing to open-source projects. Some of my notable achievements include:
 
 - **Graduation Project:** ShahraZad (A+ Grade) - An AI-driven audiobook system.
 - **Distributed Simple ATM System:** Built with Go and MySQL.
@@ -15,9 +16,10 @@ I am a fresh Computer Science graduate from Assiut University with strong skills
 - **Volunteering:** C++ instructor and mentor for problem-solving skills.
 
 ## Skills
-- **Programming Languages:** C, C++, Java, Python, Go, C#
-- **Database:** MySQL
-- **Other:** Object-Oriented Programming, Data Structures, Algorithms, Testing & Debugging
+- **Basics:** Object-Oriented Programming, problem-solving Skills , Data Structures, Algorithms, Testing & Debugging ,MySQL 
+- **Programming Languages:** C, C++, C# , Java, Python, Go , JavaScript 
+- **Database:** 
+- **Tools:** GIT, HTML , CSS
 
 ## Projects
 Here are some of the projects I’ve worked on:
@@ -27,7 +29,7 @@ Here are some of the projects I’ve worked on:
 - [Endless Runner Game](https://github.com/YousryEssam/Endless-runner-game-with-unity)
 - [Snake Game](https://github.com/YousryEssam/Snake-Game)
 
+
 ## Contact Me
-- **Email:** [yousry.essam.ayoub@gmail.com](mailto:youssry.essam2111@gmail.com)
-- **GitHub:** [YousryEssam](https://github.com/YousryEssam)
 - **LinkedIn:** [Yousry Essam](https://www.linkedin.com/in/yousryessam)
+- **Email:** [yousry.essam.ayoub@gmail.com](mailto:youssry.essam2111@gmail.com)

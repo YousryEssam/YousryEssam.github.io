@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
-@import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Itim&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Itim&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 
 :root {
+  --fontSize: 18px;
+  --BtnColor: #eee;
   --fontColor: white;
   --iThemeColor: red;
   --sendButn: #ff2e63;
@@ -11,11 +13,10 @@
   --themeColor: #08d9d6;
   --footerBGColor: #333;
   --backgroundColor: black;
-  --fontFamily : "Playwrite GB S", 'Playfair Display', serif;
+  --fontFamily: "Playwrite GB S", "Playfair Display", serif;
 }
 
 /* Scrollbar */
-
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -29,6 +30,7 @@
   background-color: var(--boxColor);
 }
 
+/* General Style */
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +39,7 @@
   border: none;
   outline: none;
   font-family: "Poppins", sans-serif;
+  line-height: 1.3;
 }
 
 html {
@@ -56,27 +59,30 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  margin-top: 0px;
-  position: fixed;
-  padding: 1rem 5%;
-  background-color: var(--navColor);
-  justify-content: space-between;
-  align-items: center;
   z-index: 100;
+  display: flex;
+  position: fixed;
+  margin-top: 0px;
+  padding: 1rem 5%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--navColor);
 }
 
+/* Navbar */
 .logo {
   font-size: 2rem;
-  color: var(--themeColor);
-  font-weight: 800;
   cursor: pointer;
-  transition: 0.5s ease;
+  font-weight: bold;
   white-space: nowrap;
+  transition: 0.5s ease;
+  color: var(--themeColor);
+  font-family: var(--fontFamily);
 }
 
 .logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  color: var(--iThemeColor);
 }
 
 nav a {
@@ -141,7 +147,7 @@ nav a.active {
 section {
   min-height: 100vh;
   padding: 5rem 9% 5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .home {
@@ -155,7 +161,7 @@ section {
 .home .home-content h1 {
   font-size: 5rem;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.2;
   font-family: var(--fontFamily);
 }
 
@@ -163,35 +169,37 @@ span {
   color: var(--themeColor);
   font-family: var(--fontFamily);
 }
+#myName {
+  font-size: 70%;
+  font-weight: bold;
+}
 
 .home-content h3 {
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
-  font-weight: 400;
+  font-weight: bold;
   font-family: var(--fontFamily);
 }
 
 .home-content p {
-  font-size: 1.8rem;
-  
-}
-
-.home-img {
-  border-radius: 50%;
+  line-height: 2.4rem;
+  font-size: var(--fontSize);
 }
 
 .home-img img {
-  position: relative;
-  width: 32vw;
-  border-radius: 50%;
-  box-shadow: 0 0 25px solid var(--themeColor);
+  width: 30vw;
   cursor: pointer;
+  margin-top: 5rem;
+  border-radius: 50%;
+  position: relative;
   transition: 0.2s linear;
 }
 
 .home-img img:hover {
   transform: scale(1.05);
   transition: 0.3s;
+  box-shadow: 0 0 30px var(--themeColor);
 }
 
 .social-icons a {
@@ -312,19 +320,12 @@ span {
   .home-content h1 {
     font-size: 5rem;
   }
-
-  .home-img img {
-    width: 70vw;
-    margin-top: 4rem;
-  }
 }
 
 /*************** education Section *****************/
 .education {
   padding: 5rem 9%;
-  background-color: var(
-    --backgroundColor
-  ); /* Match background with the rest of your site */
+  background-color: var(--backgroundColor);
   color: var(--fontColor); /* Ensure text is visible */
   text-align: center; /* Center all text in the section */
 }
@@ -337,23 +338,49 @@ span {
 }
 .education h3 {
   color: var(--themeColor);
-  font-size: 2.5rem;
-}
-.education-content {
   font-size: 2rem;
-  text-align: center; /* Center text within education content */
 }
 
 .education-content {
-  flex: 1 1 100%; /* One column layout */
-  background-color: var(--boxColor);
-  border-radius: 10px;
-  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--themeColor);
+  padding: 10px;
+  margin-bottom: 20px;
+
+  font-size: 2rem;
+  text-align: left;
   margin: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  flex: 1 1 100%;
+  border-radius: 15px;
+  background-color: var(--boxColor);
   transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.education-info {
+  flex: 1; /* Allows content to take up remaining space */
+  max-width: 70%; /* Ensures content doesn't exceed a specific width */
+}
+
+.education-info > p {
+  margin: 5px;
+  line-height: 3rem;
+  font-size: var(--fontSize);
+}
+.education-img {
+  width: 250px; /* Adjust the size of the image container */
+  margin-left: 10px; /* Adds spacing between content and image */
+}
+.education-img img {
+  width: 100%; /* Ensures the image scales properly */
+  height: auto; /* Maintains aspect ratio */
+}
+#aun-logo {
+  background-color: #f5f5f5;
+  width: auto;
+}
 /**************************/
 
 .experience {
@@ -378,16 +405,22 @@ span {
   text-align: left; /* Align text to the left for readability */
   border-radius: 10px;
   padding: 25px;
+  border: 1px solid var(--themeColor);
   background-color: var(--boxColor);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 4px 8px rgba(48, 46, 46, 0.466);
 }
 
 .experience-content ul {
-  list-style-type: disc; /* Bullet points for the list */
-  padding-left: 20px; /* Indent the list */
+  padding-left: 30px;
+  font-size: var(--fontSize);
+  list-style-type: disc;
 }
-
+.experience-content>h3{
+  margin: 5px;
+  font-size: 25px;
+  color: var(--themeColor);
+}
 /* Projects Section */
 .projects {
   padding: 5rem 9%;
@@ -435,6 +468,7 @@ span {
 .project-item {
   flex: 1 1 100%; /* One column layout */
   background-color: var(--boxColor);
+  border: 1px solid var(--themeColor);
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -567,11 +601,11 @@ span {
 .achievement-item {
   display: flex;
   padding: 2rem;
-  /* #444444; */
-  background-color: var(--boxColor);
   border-radius: 8px;
   align-items: center;
   flex-direction: column;
+  background-color: var(--boxColor);
+  border: 1px solid var(--themeColor);
 }
 
 .achievement-item img {
@@ -632,11 +666,14 @@ span {
 }
 
 .volunteering-item {
-  font-size: 1.5rem;
-  /* #444444; Darker background for each volunteering item */
-  background-color: var(--boxColor);
   padding: 2rem;
+  font-size: 1.5rem;
   border-radius: 8px;
+  background-color: var(--boxColor);
+  border: 1px solid var(--themeColor);
+}
+.volunteering-item > p {
+  line-height: 2.8rem;
 }
 
 /* Skills Section */
@@ -798,29 +835,29 @@ span {
 
 /* Footer */
 footer {
-  background-color: var(--footerBGColor);
-  color: var(--fontColor);
   padding: 20px 0;
   text-align: center;
+  color: var(--fontColor);
+  background-color: var(--footerBGColor);
 }
 
 .footer-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 1200px;
 }
 
 .footer-content h3 {
-  margin: 10px 0;
-  font-size: 24px;
+  margin: 10px;
+  font-size: 25px;
 }
 
 .footer-content p {
-  margin: 5px 0;
-  font-size: 14px;
+  margin: 5px;
+  font-size: 15px;
 }
 .footer-social-icons {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .footer-social-icons a {
   color: var(--fontColor);
@@ -834,6 +871,7 @@ footer {
 
 /* Dark/Light mode  */
 .darkLightSwitch {
+  --BtnColor: #666;
   --fontColor: black;
   --themeColor: red;
   --iThemeColor: #08d9d6;
@@ -847,9 +885,9 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 50px; 
+  width: 50px;
   height: 50px;
-  background-color: var(--themeColor);
+  background-color: var(--BtnColor);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -857,6 +895,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: var(--fontColor);
+  border: 2px solid var(--themeColor);
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
@@ -868,6 +907,8 @@ footer {
 
 /* Button hover effect */
 .fixed-button:hover {
-  background-color: var(--iThemeColor);
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  /* transition: 0.3s; */
+  transform: scale(1.2);
+  background-color: var(--themeColor);
+  box-shadow: 0px -0px 20px var(--themeColor);
 }

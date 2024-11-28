@@ -2,6 +2,7 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
+
 window.addEventListener("scroll", () => {
     let currentSection = "home";
 
@@ -39,7 +40,15 @@ document.getElementById("progress-bar").style.width = scrolled + "%";
 };
 
 // Dark - Light mode switch
+var ITI_Logo_path = ["Images/ITI-Logo-Dark.png", "Images/ITI-Logo.svg"];
 function darkModeSwitch(){
     var darkSwitch = document.getElementById("mainBody");
     darkSwitch.classList.toggle("darkLightSwitch");
+    var ITI_Logo = document.getElementById("ITI-Logo");
+    if(ITI_Logo.getAttribute("src") == ITI_Logo_path[0]){
+        ITI_Logo.setAttribute("src" ,ITI_Logo_path[1] );
+    }
+    else {
+        ITI_Logo.setAttribute("src" ,ITI_Logo_path[0] );
+    }
 }

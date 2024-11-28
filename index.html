@@ -11,9 +11,11 @@
     <title>Yousry's Portfolio website</title>
     <link rel="icon" href="Icons/favicon.ico" type="image/x-icon" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Itim&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-    rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Itim&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body id="mainBody">
     <div id="progress-bar"></div>
     <header>
@@ -37,10 +39,10 @@
       <div class="home-content">
         <br />
         <br />
-        <h1>Hello, I'm <span>Yousry Essam</span></h1>
+        <h1>Hello, I'm <span id="myName">Yousry Essam</span></h1>
         <h3 class="typing-text">
           I'm a
-          <br />
+          <!-- <br/> -->
           <span></span>
         </h3>
         <br />
@@ -91,23 +93,35 @@
     </section>
 
     <section id="education" class="education">
-      <br />
-      <br />
       <h2>Education</h2>
+
       <div class="education-content">
-        <h3><strong>Bachelor's degree in Computer Science</strong></h3>
-        <p>
-          Faculty of Computer Science and Information Technology - Assiut
-          University
-        </p>
-        <p>Oct 2020 – Jul 2024 | Assiut, Egypt</p>
+        <div class="education-info">
+          <h3>
+            <strong>Professional Web Development & BI-Infused CRM Trainee</strong>
+          </h3>
+          <p>Professional Training Scholarships 9–Month Program </p>
+          <p>Information Technology Institute (ITI) - Assiut branche</p>
+          <p>Oct 2024 – Now | Assiut, Egypt</p>
+        </div>       
+        <div class="education-img">
+          <a href="https://iti.gov.eg/home" target="_blank">  <img src="Images/ITI-Logo-Dark.png" alt="ITI Logo" id = "ITI-Logo"></a>
+         
+        </div>
       </div>
+
       <div class="education-content">
-        <h3><strong>ITI 9-Month Trainee in the Professional Web Development & BI-Infused CRM Track</strong></h3>
-        <p>
-          Information Technology Institute (ITI) - Assiut branche
-        </p>
-        <p>Oct 2024 – Now | Assiut, Egypt</p>
+        <div class="education-info">
+          <h3>
+            <strong>Bachelor's degree in Computer Science</strong>
+          </h3>
+          <p>Faculty of Computer Science and Information Technology - Assiut
+            University</p>
+          <p>Oct 2020 – Jul 2024 | Assiut, Egypt</p>
+        </div>       
+        <div class="education-img" id = "aun-logo" >
+          <a href="https://www.aun.edu.eg/main" target="_blank"><img src="Images/aun-logo.png" alt="ITI Logo"></a>
+        </div>
       </div>
     </section>
 
@@ -343,22 +357,32 @@
           <h3>ICPC EELU Community, Instructor & Mentor</h3>
           <p>Mar 2024 – Jun 2024 | Assiut, Egypt</p>
           <p>
-            As a volunteer instructor in a student activity, I teach C++
-            programming and problem solving skills. This role involves creating
-            lesson plans, conducting interactive sessions, and providing
-            guidance on debugging and algorithm development, allowing me to
-            share my knowledge while enhancing my teaching and mentoring
-            abilities.
+            Designed and delivered comprehensive programming workshops to
+            enhance students' C++ proficiency and problem-solving abilities.
+            Focused on teaching algorithmic techniques and data structures,
+            preparing participants for prestigious competitions like the ICPC.
+            Provided hands-on mentorship, guiding students through complex
+            coding challenges, algorithm design, and competitive programming
+            strategies. Offered personalized support to improve students'
+            performance on competitive programming platforms, fostering their
+            confidence and skill growth. Let me know if this works or needs
+            further tweaking!
           </p>
         </div>
         <div class="volunteering-item">
           <h3>ICPC Assiut Community, Mentor for C++ and Problem Solving</h3>
           <p>Oct 2021 – Jun 2024 | Assiut, Egypt</p>
           <p>
-            As a volunteer mentor in a student activity, I guided peers in C++
-            programming and problem solving. This role allowed me to assist
-            others while honing my skills in communication, debugging,
-            searching, and mentoring.
+            Mentored students in mastering C++ programming, problem-solving, and
+            competitive programming skills with a focus on preparing for
+            contests like the ICPC. Developed and conducted training sessions on
+            advanced algorithms, data structures, and efficient coding
+            techniques. Collaborated closely with students to enhance their
+            problem-solving capabilities, refine their coding practices, and
+            improve their performance on competitive programming platforms.
+            Emphasized strategic thinking, code optimization, and practical
+            application, fostering confidence and excellence in programming
+            competitions.
           </p>
         </div>
       </div>
@@ -476,8 +500,8 @@
         <div class="footer-content">
           <h3>Yousry Essam Ayoub</h3>
           <p>
-            Computer Science Graduate | Competitive Programmer | Software
-            Developer
+            ITI Trainee | Computer Science Graduate | Competitive Programmer |
+            Software Developer
           </p>
           <p>&copy; 2024 All Rights Reserved</p>
         </div>
