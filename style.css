@@ -5,6 +5,7 @@
 :root {
   --fontSize: 18px;
   --BtnColor: #eee;
+  --linkColor: blue;
   --fontColor: white;
   --iThemeColor: red;
   --sendButn: #ff2e63;
@@ -153,7 +154,6 @@ section {
   padding: 5rem 9% 5rem;
   margin-bottom: 5rem;
 }
-
 
 /******************************************************************************************/
 /********************************** home Section ******************************************/
@@ -334,45 +334,44 @@ span {
 /***************************** education Section ******************************************/
 .education {
   padding: 5rem 9%;
+  text-align: center;
+  color: var(--fontColor);
   background-color: var(--backgroundColor);
-  color: var(--fontColor); /* Ensure text is visible */
-  text-align: center; /* Center all text in the section */
 }
-
 .education h2 {
   font-size: 3rem;
+  text-align: center;
   margin-bottom: 1rem;
   color: var(--themeColor);
-  text-align: center; /* Center h2 specifically */
 }
 .education h3 {
+  font-size: 2.3rem;
   color: var(--themeColor);
-  font-size: 2rem;
 }
-
 .education-content {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid var(--themeColor);
-  padding: 10px;
-  margin-bottom: 20px;
-
-  font-size: 2rem;
-  text-align: left;
   margin: 25px;
+  display: flex;
+  padding: 10px;
   padding: 25px;
   flex: 1 1 100%;
+  font-size: 2rem;
+  text-align: left;
   border-radius: 15px;
+  margin-bottom: 20px;
+  justify-content: space-between;
   background-color: var(--boxColor);
+  border: 1px solid var(--themeColor);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.education-content:hover {
+  box-shadow: 0 0 25px var(--themeColor);
+  transform: scale(1.01) translateY(-5px);
+}
 .education-info {
   flex: 1;
   max-width: 70%;
 }
-
 .education-info > p {
   margin: 5px;
   line-height: 3rem;
@@ -383,113 +382,109 @@ span {
   margin-left: 10px;
 }
 .education-img img {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 #aun-logo {
+  max-width: 100px;
   background-color: #f5f5f5;
-  width: auto;
 }
-
 /******************************************************************************************/
+/**************************************experience******************************************/
 .experience {
   padding: 5rem 9%;
-  background-color: var(
-    --backgroundColor
-  ); /* Match background with the rest of your site */
-  color: var(--fontColor); /* Ensure text is visible */
-  text-align: center; /* Center text */
-  margin-bottom: 4rem; /* Space below the experience section */
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--fontColor);
+  background-color: var(--backgroundColor);
 }
-
 .experience h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: var(--themeColor); /* Match your theme color */
+  color: var(--themeColor);
 }
-
 .experience-content {
-  flex: 1 1 100%; /* One column layout */
+  flex: 1 1 100%;
   font-size: 1.6rem;
-  text-align: left; /* Align text to the left for readability */
+  text-align: left;
   border-radius: 10px;
   padding: 25px;
-  border: 1px solid var(--themeColor);
   background-color: var(--boxColor);
+  border: 1px solid var(--themeColor);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 4px 8px rgba(48, 46, 46, 0.466);
 }
-
+.experience-content:hover {
+  box-shadow: 0 0 25px var(--themeColor);
+  transform: scale(1.01) translateY(-5px);
+}
 .experience-content ul {
   padding-left: 30px;
-  font-size: var(--fontSize);
   list-style-type: disc;
+  font-size: var(--fontSize);
 }
-.experience-content>h3{
+.experience-content > h3 {
   margin: 5px;
   font-size: 25px;
   color: var(--themeColor);
 }
-
 /******************************************************************************************/
-/* Projects Section */
+/************************************Projects Section**************************************/
 .projects {
   padding: 5rem 9%;
-  background-color: var(
-    --backgroundColor
-  ); /* Match background with the rest of your site */
-  color: var(--fontColor); /* Ensure text is visible */
-  margin-bottom: 5rem; /* Space below the projects section */
+  margin-bottom: 5rem;
+  color: var(--fontColor);
+  background-color: var(--backgroundColor);
 }
-
 .projects h2 {
   font-size: 4rem;
+  text-align: center;
   margin-bottom: 3rem;
-  color: var(--themeColor); /* Match your theme color */
-  text-align: center; /* Center the title */
+  color: var(--themeColor);
 }
-
 .projects h3 {
   color: var(--themeColor);
   text-align: left;
 }
-
 .projects a {
-  color: var(--themeColor);
   font-size: 1.5rem;
-  text-decoration: underline;
   transition: color 0.3s;
   text-align: center;
+  color: var(--themeColor);
+  text-decoration: underline;
 }
 
 .projects-content {
-  font-size: 1.6rem;
-  text-align: left;
+  gap: 20px;
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
+  font-size: 1.8rem;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .projects-content ul {
-  list-style-type: disc; /* Bullet points for the list */
-  padding-left: 10px; /* Indent the list */
+  /* 3columns list */
+  columns: 3; 
+  -moz-columns: 3;
+  -webkit-columns: 3;
+  font-weight: bold;
+  padding-left: 10px; 
+  list-style-type: disc;
 }
 
 .project-item {
-  flex: 1 1 100%; /* One column layout */
+  padding: 25px;
+  flex: 1 1 100%;
+  border-radius: 10px;
   background-color: var(--boxColor);
   border: 1px solid var(--themeColor);
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
-
 .project-item:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 25px var(--themeColor);
 }
-
 .project-item h3 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -497,74 +492,49 @@ span {
 }
 
 .project-item p {
-  font-size: 1.5rem;
-  color: var(--fontColor);
+  font-size: 1.7rem;
   margin-bottom: 20px;
+  color: var(--fontColor);
 }
-
 .project-item a {
   text-decoration: none;
-  color: #007bff;
+  color: var(--linkColor);
   font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
 
 .project-item a:hover {
-  color: #0056b3;
-}
-
-.project-description p {
-  font-size: 1.5rem;
   color: var(--fontColor);
-  margin-bottom: 20px;
 }
-
+.project-description p {
+  padding: 5px;
+  font-size: 1.7rem;
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: var(--fontColor);
+}
 .project-tools h4 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: var(--themeColor);
 }
-
 .project-tools ul {
-  list-style-type: disc;
   margin-left: 30px;
+  list-style-type: disc;
 }
-
 .project-tools ul li {
   font-size: 1.8rem;
-  color: var(--fontColor);
   margin-bottom: 10px;
+  color: var(--fontColor);
 }
-
 .project-content {
-  display: flex; /* Use flexbox to align description and demo side by side */
-  justify-content: space-between; /* Space between items */
-  gap: 20px; /* Space between description and demo */
+  gap: 20px; 
+  display: flex; 
+  justify-content: space-between;
 }
-
 .project-description {
-  flex: 1; /* Allow the description to take available space */
+  flex: 1;
 }
-
-.project-demo {
-  flex: 0 0 384px; /* Fixed width for the video demo */
-  text-align: center; /* Center the video */
-  margin: 20px 0; /* Space above and below the demo section */
-}
-
-.project-demo h4 {
-  font-size: 1.2rem; /* Slightly larger font for the demo heading */
-  margin-bottom: 10px; /* Space below the heading */
-  color: var(--themeColor); /* Match your theme color */
-}
-
-.project-demo iframe {
-  width: 300px; /* Full width for responsiveness */
-  height: 420px; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners for the video */
-}
-
-/* Optional: Responsive adjustments */
 @media (max-width: 768px) {
   .project-content {
     flex-direction: column; /* Stack items on smaller screens */
@@ -575,39 +545,31 @@ span {
     width: 100%; /* Full width for smaller screens */
   }
 }
-
 @media (max-width: 400px) {
   .project-demo iframe {
     width: 100%; /* Full width on smaller screens */
     height: auto; /* Maintain aspect ratio */
   }
 }
-
 /******************************************************************************************/
-/* achievements */
-
+/*********************************achievements*********************************************/
 .achievements {
   padding: 3rem 9%;
-  background-color: var(
-    --backgroundColor
-  ); /* Match background with the rest of your site */
-  color: var(--fontColor); /* Ensure text is visible */
-  margin-bottom: 4rem; /* Space below the achievements section */
+  margin-bottom: 4rem;
+  color: var(--fontColor);
+  background-color: var(--backgroundColor);
 }
-
 .achievements h2 {
   font-size: 3rem;
+  text-align: center;
   margin-bottom: 2rem;
-  color: var(--themeColor); /* Match your theme color */
-  text-align: center; /* Center the title */
+  color: var(--themeColor);
 }
-
 .achievements-content {
+  gap: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Space between achievements */
 }
-
 .achievement-item {
   display: flex;
   padding: 2rem;
@@ -617,45 +579,41 @@ span {
   background-color: var(--boxColor);
   border: 1px solid var(--themeColor);
 }
-
 .achievement-item img {
-  width: 600px; /* Set image size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 20px; /* Round corners */
-  margin-bottom: 1.2rem; /* Space below image */
+  width: 60%;
+  border-radius: 15px; 
+  margin-bottom: 1.2rem;
 }
-
 .achievement-item h3 {
-  font-size: 2rem;
-  color: var(--themeColor); /* Match your theme color */
-  margin-bottom: 0.5rem; /* Space below title */
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--themeColor);
 }
-
 .achievement-item p {
   font-size: 1.6rem;
-  text-align: center; /* Center align the description */
-  margin-bottom: 1.2rem; /* Space below description */
+  text-align: center;
+  margin-bottom: 1.2rem;
 }
-
 .achievement-item a {
-  color: var(--themeColor); /* Match link color */
   font-size: 1.4rem;
-  text-decoration: underline; /* Underline the link */
   transition: color 0.3s;
+  color: var(--themeColor);
+  text-decoration: underline;
 }
-
-
 .achievement-item a:hover {
   color: var(--fontColor);
 }
+.achievement-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px var(--themeColor);
+}
 
 /******************************************************************************************/
-
 .volunteering {
   padding: 5rem 9%;
-  background-color: var(--backgroundColor);
-  color: var(--fontColor);
   margin-bottom: 4rem;
+  color: var(--fontColor);
+  background-color: var(--backgroundColor);
 }
 
 .volunteering h2 {
@@ -671,9 +629,9 @@ span {
 }
 
 .volunteering-content {
+  gap: 4rem; 
   display: flex;
   flex-direction: column;
-  gap: 4rem; /* Space between volunteering experiences */
 }
 
 .volunteering-item {
@@ -686,7 +644,10 @@ span {
 .volunteering-item > p {
   line-height: 2.8rem;
 }
-
+.volunteering-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px var(--themeColor);
+}
 /******************************************************************************************/
 /***************************************Skills Section*************************************/
 
@@ -720,7 +681,8 @@ span {
   background-color: var(--boxColor);
 }
 
-.skill-category:hover{
+.skill-category:hover {
+  transform: translateY(-5px);
   box-shadow: 0 0 25px var(--themeColor);
 }
 
@@ -784,12 +746,13 @@ span {
   border-radius: 10px;
   background-color: var(--boxColor);
   border: 1px solid var(--themeColor);
-  
 }
-.contact-info:hover{
+.contact-info:hover {
+  transform: translateY(-5px);
   box-shadow: 0 0 25px var(--themeColor);
 }
-.contact-form:hover{
+.contact-form:hover {
+  transform: translateY(-5px);
   box-shadow: 0 0 25px var(--themeColor);
 }
 .contact-info h3 {
@@ -903,6 +866,7 @@ footer {
   --sendButn: #3ab0ff;
   --boxColor: #f5f5f5;
   --navColor: #e3e7e7;
+  --linkColor: rgb(55, 0, 255);
 }
 .fixed-button {
   position: fixed;
