@@ -23,7 +23,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// Optional: Click event to manage active state immediately
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
         navLinks.forEach(nav => nav.classList.remove("active"));
