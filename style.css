@@ -465,11 +465,11 @@ span {
 
 .projects-content ul {
   /* 3columns list */
-  columns: 3; 
+  columns: 3;
   -moz-columns: 3;
   -webkit-columns: 3;
   font-weight: bold;
-  padding-left: 10px; 
+  padding-left: 10px;
   list-style-type: disc;
 }
 
@@ -528,8 +528,8 @@ span {
   color: var(--fontColor);
 }
 .project-content {
-  gap: 20px; 
-  display: flex; 
+  gap: 20px;
+  display: flex;
   justify-content: space-between;
 }
 .project-description {
@@ -581,7 +581,7 @@ span {
 }
 .achievement-item img {
   width: 60%;
-  border-radius: 15px; 
+  border-radius: 15px;
   margin-bottom: 1.2rem;
 }
 .achievement-item h3 {
@@ -603,7 +603,7 @@ span {
 .achievement-item a:hover {
   color: var(--fontColor);
 }
-.achievement-item:hover{
+.achievement-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px var(--themeColor);
 }
@@ -629,7 +629,7 @@ span {
 }
 
 .volunteering-content {
-  gap: 4rem; 
+  gap: 4rem;
   display: flex;
   flex-direction: column;
 }
@@ -644,7 +644,7 @@ span {
 .volunteering-item > p {
   line-height: 2.8rem;
 }
-.volunteering-item:hover{
+.volunteering-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px var(--themeColor);
 }
@@ -893,9 +893,9 @@ footer {
   width: 0;
   height: 0;
 }
-.switch:hover{
-   background-color: var(--themeColor);
-   box-shadow: 0px -0px 20px var(--themeColor);
+.switch:hover {
+  background-color: var(--themeColor);
+  box-shadow: 0px -0px 20px var(--themeColor);
 }
 
 .slider {
