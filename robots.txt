@@ -1,0 +1,15 @@
+# Robots.txt for Yousry Essam Ayoub Portfolio
+# https://yousryessam.github.io/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yousryessam.github.io/sitemap.xml
+
+# Crawl-delay (optional, remove if not needed)
+Crawl-delay: 1
+
+# Disallow common non-content paths
+Disallow: /.git/
+Disallow: /node_modules/

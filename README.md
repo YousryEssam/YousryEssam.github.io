@@ -1,40 +1,118 @@
-# YousryEssam.github.io
+# Yousry Ayoub | Portfolio
 
-## Welcome to My portfolio
+![Portfolio Preview](assets/images/og-image.png)
 
-This is a web-based version of my resume, created using HTML , CSS and JavaScript. Hosted on GitHub Pages. You can visit the live website by following the link below:
+A modern, responsive portfolio website showcasing my skills as a Full-Stack .NET Developer.
 
-- [Visit my portfolio](https://YousryEssam.github.io)
+🔗 **Live Demo:** [yousryessam.github.io](https://yousryessam.github.io/)
 
-## About Me
+---
 
-### Software Developer | Competitive Programmer | ITI Trainee @ PDW & CRM Track
+## ✨ Features
 
-Fresh Computer Science graduate from Assiut University with strong expertise in programming languages such as C, C++, Java, Python, Go, and C#. Accomplished competitive programmer with high rankings in coding contests and active profiles on Codeforces, LeetCode, and HackerRank. Experienced in projects. Currently pursuing the Professional Development & BI-infused CRM training program at ITI's Assiut branch, enhancing technical and professional skills. Passionate about software development, mentoring, and contributing to open-source projects. Some of my notable achievements include:
+- **Modern Design** - Glassmorphism, gradient effects, and elegant typography
+- **Dark/Light Theme** - Toggle between themes with smooth transitions
+- **Bilingual Support** - English & Arabic with RTL layout
+- **Responsive** - Mobile-first design for all screen sizes
+- **Animated UI** - Scroll reveals, 3D tilt effects, shimmer animations
+- **Interactive Elements** - Magnetic hover, ripple clicks, progress indicators
 
-- **Graduation Project:** ShahraZad (A+ Grade) - An AI-driven audiobook system.
-- **Distributed Simple ATM System:** Built with Go and MySQL.
-- **Rankings:** 51st Place at ECPC 2024 Finals, 29th at ECPC 2024 Qualifications, and more.
-- **Volunteering:** C++ instructor and mentor for problem-solving skills.
+---
 
-## Skills
+## 🛠️ Tech Stack
 
-- **Basics:** Object-Oriented Programming, problem-solving Skills , Data Structures, Algorithms, Testing & Debugging ,MySQL
-- **Programming Languages:** C, C++, C# , Java, Python, Go , JavaScript
-- **Database:**
-- **Tools:** GIT, HTML , CSS
+- **HTML5** - Semantic, accessible markup
+- **CSS3** - Custom properties, animations, flexbox/grid
+- **JavaScript** - Vanilla JS, Intersection Observer API
+- **Fonts** - Google Fonts (Outfit, Inter, Cairo)
 
-## Projects
+---
 
-Here are some of the projects I’ve worked on:
+## 📁 Project Structure
 
-- [ShahraZad - AI Audiobook System](https://github.com/YousryEssam/ShahraZad)
-- [Distributed Simple ATM System](https://github.com/YousryEssam/Distributed-System-Using-Golang)
-- [Devices Price Classification System](https://github.com/YousryEssam/Devices-Price-Classification-System)
-- [Endless Runner Game](https://github.com/YousryEssam/Endless-runner-game-with-unity)
-- [Snake Game](https://github.com/YousryEssam/Snake-Game)
+```
+Portfolio.V3/
+├── index.html          # Main HTML file
+├── css/
+│   ├── variables.css   # Design tokens & theming
+│   ├── base.css        # Reset & typography
+│   ├── components.css  # Reusable components
+│   ├── animations.css  # Keyframes & transitions
+│   ├── sections.css    # Section-specific styles
+│   └── responsive.css  # Media queries
+├── js/
+│   ├── main.js         # App controller
+│   ├── animations.js   # Scroll animations
+│   ├── theme.js        # Dark/light toggle
+│   ├── language.js     # i18n handler
+│   └── translations.js # Translation strings
+├── assets/
+│   └── images/         # Project images & logos
+└── favicon/            # Favicon files
+```
 
-## Contact Me
+---
 
-- **LinkedIn:** [Yousry Essam](https://www.linkedin.com/in/yousryessam)
-- **Email:** [yousry.essam.ayoub@gmail.com](mailto:youssry.essam2111@gmail.com)
+## 🚀 Deployment
+
+This site is deployed using **GitHub Pages**.
+
+### To deploy your own:
+
+1. Fork or clone this repository
+2. Go to **Settings** → **Pages**
+3. Set source to `main` branch, `/ (root)` folder
+4. Your site will be live at `https://yourusername.github.io/`
+
+---
+
+## 🎨 Customization
+
+### Change Colors
+Edit `css/variables.css`:
+```css
+:root {
+  --primary-500: #6366f1;  /* Main accent color */
+  --secondary-500: #8b5cf6; /* Secondary accent */
+  --accent-500: #06b6d4;    /* Tertiary accent */
+}
+```
+
+### Update Content
+- Edit text directly in `index.html`
+- Replace images in `assets/images/`
+- Update translations in `js/translations.js`
+
+---
+
+## 📱 Sections
+
+| Section | Description |
+|---------|-------------|
+| Hero | Introduction with animated profile |
+| About | Bio, skills with tabbed categories |
+| Experience | Work history timeline |
+| Projects | Featured project cards |
+| Education | Academic background |
+| Awards | Achievements & competitions |
+| Volunteering | Community contributions |
+| Contact | Form & social links |
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 📬 Contact
+
+**Yousry Essam Ayoub**
+- 📧 [yousry.essam.ayoub@gmail.com](mailto:yousry.essam.ayoub@gmail.com)
+- 💼 [LinkedIn](https://linkedin.com/in/yousryessam)
+- 🐙 [GitHub](https://github.com/YousryEssam)
+
+---
+
+<p align="center">Made with ❤️ by Yousry Ayoub</p>

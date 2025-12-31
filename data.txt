@@ -1,0 +1,87 @@
+Yousry Essam Ayoub * Cairo, Egypt (Ready to relocate)
+Software Engineer # yousry.essam.ayoub@gmail.com
+§
+Github.com/YousryEssam  +20 1289 529 751
+ï
+LinkedIn.com/in/yousryessam µ Exempt from military service
+PROFESSIONAL SUMMARY
+Software Engineer with strong problem-solving skills and a solid grasp of software engineering principles and competitive
+programming. Experienced in developing full-stack applications with .NET technologies, with knowledge in solving complex
+problems, and solved more than +3500 problems on various online judges. Quick to learn new technologies and focused on
+writing clean, maintainable code. Looking to contribute to a collaborative tech team while continuing to grow professionally.
+EDUCATION
+9-Month Diploma: Professional Training Program (PTP) Information Technology Institute (ITI)
+Professional Development & BI-infused CRM Oct 2024 – Jul 2025
+Bachelor of Computer Science Assiut University
+Faculty of Computer Science and Information Technology Oct 2020 – Jul 2024
+GPA 2.93/4.0
+EXPERIENCE
+Junior Software Engineer Nov 2025 – Present
+Toq Information Technology (Toq IT) Riyadh, Saudi Arabia · Remote
+• Developing full-stack web applications using ASP.NET MVC, ASP.NET Core, C#, and the .NET ecosystem.
+• Building responsive and intuitive UI components using Angular and modern front-end practices.
+• Implementing APIs, data access layers, and back-end features to support business requirements.
+• Collaborating with cross-functional teams to deliver clean, maintainable, and scalable solutions.
+Software Engineer Jun 2025 – Present
+IPMagiX Cairo, Egypt · Remote
+• Developing and maintaining software applications using .NET technologies and modern development practices.
+• Working on projects utilizing ASP.NET Core, Entity Framework, and related .NET ecosystem tools.
+• Applied problem-solving skills and software engineering principles to address complex technical challenges.
+Summer Internship Jul 2023 – Aug 2023
+Petra Software Industries Assiut, Egypt · Onsite
+• Designed and managed databases using MySQL for real-world project implementations.
+• Wrote efficient, high-quality SQL queries to support diverse application needs.
+TECHNICAL SKILLS
+Backend : ASP.NET Core, .NET Framework, RESTful APIs, Web API , Entity Framework Core, LINQ, SignalR
+Languages : C#, C++, Python, JavaScript, TypeScript, SQL
+Databases : Microsoft SQL Server, MySQL, MongoDB
+Frontend : Angular, Blazor, HTML5, CSS3, Bootstrap, jQuery
+Tools : Visual Studio, VS Code, Postman, Swagger
+Development : OOP, SOLID Principles, Clean Architecture, CQRS , Algorithms , Data structures ,Design Patterns, Git ,
+Agile/Scrum, GitHub, Unit Testing
+SOFT SKILLS
+Communication : Technical Documentation, Cross-functional Collaboration
+Problem Solving : Critical Thinking, Analytical Reasoning, Debugging
+Adaptability : Learning New Technologies, Working Under Pressure
+PROJECTS
+ShahraZad (Graduation Project - A+ Grade) Flutter, FastAPI, Python, NLP, TTS APIs, Deep Learning
+• Built a cross-platform app that converts stories into expressive audio using deep learning and generative AI with
+emotional TTS, voice customization, and Arabic/English support.
+Fit4Job - Recruitment and Hiring System  ASP.NET Web API , Web APIs , EF Core, SQL Server , JWT
+• Built a full-stack recruitment platform with advanced job search, applicant tracking, skill-based matching, and
+online exams.
+BlOO - Social Media Web Application  ASP.NET MVC Core, SignalR, EF Core, SQL Server, JWT, JavaScript, Bootstrap
+• Developed a full-featured social platform with real-time messaging, post sharing, social interactions, and responsive
+design.
+TrendOra - E-Commerce Web APIs  ASP.NET Web API, EF Core, SQL Server, JWT, Swagger, REST
+• Designed and implemented RESTful APIs for an e-commerce platform supporting 3 user roles (Admin, Trader,
+Customer) with product management, order tracking, and secure authentication.
+Dynamic CMS Platform ASP.NET Core Web API, EF Core, SQL Server, REST
+• Led backend development for a WordPress-like CMS platform, architecting RESTful APIs to enable content
+management from design to production with scalable, maintainable architecture.
+Personal Portfolio Website  HTML5, CSS3, JavaScript, Bootstrap , GitHub Pages
+• Built a responsive, accessible portfolio site to showcase projects and skills, with a focus on clean design and
+performance. Deployed via GitHub Pages.
+Todo App  HTML5, CSS3, JavaScript (ES6)
+• Built a responsive task management app with add, filter, and delete features, plus light/dark mode for better UX.
+VOLUNTEERING
+Problem Solving Training Lead Oct 2024 – Jul 2025
+Information Technology Institute (ITI) - Assiut Intake 45 Assiut, Egypt
+• Led problem-solving training sessions for ITI colleagues, covering algorithms, data structures, and competitive
+programming techniques.
+• Mentored and instructed peers in developing analytical thinking and coding problem-solving skills.
+Instructor & Mentor (C++ and Problem Solving Skills) Mar 2024 – Jun 2025
+ICPC EELU Community Assiut, Egypt
+• Led C++ and problem-solving sessions, created lesson plans, and mentored students on algorithms, debugging, and
+coding best practices.
+Mentor (C++ and Problem Solving) Oct 2021 – Jun 2024
+ICPC Assiut Community Assiut, Egypt
+• Guided peers in C++ and algorithms, offering support in debugging and problem-solving while strengthening
+mentoring and communication skills.
+AWARDS AND COMPETITIONS
+• ECPC 2024 Finals  – Ranked 51st among 397 teams (top 13%) in Egypt’s premier competitive programming contest.
+• ECPC 2024 Qualifications  – Secured 29th position out of 447 teams (top 7%).
+• ECPC 2023 Qualifications  – Achieved 22nd place among 235 teams (top 10%).
+• ECPC 2022 Qualifications  – Placed 24th out of 237 teams (top 11%).
+• Programming Warfare 2023 – Ranked 19th among 150 teams in Upper Egypt’s regional programming competition.
+• Solved 3500+ programming challenges across various platforms (Codeforces, LeetCode, HackerRank).

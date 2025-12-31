@@ -1,641 +1,926 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Yousry Ayoub | Software Engineer - Full-Stack .NET Developer</title>
+    <meta name="title" content="Yousry Ayoub | Software Engineer - Full-Stack .NET Developer">
+    <meta name="description"
+        content="Experienced Software Engineer specializing in full-stack development with ASP.NET Core, C#, Angular, and modern web technologies. 3500+ competitive programming problems solved. Based in Cairo, Egypt.">
+    <meta name="keywords"
+        content="Yousry Ayoub, Software Engineer, Full-Stack Developer, .NET Developer, ASP.NET Core, C#, Angular, Web Developer, Cairo Egypt, ICPC, Competitive Programming, ITI Graduate">
+    <meta name="author" content="Yousry Essam Ayoub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Canonical URL (Update this when you deploy) -->
+    <link rel="canonical" href="https://yousryessam.github.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yousryessam.github.io/">
+    <meta property="og:title" content="Yousry Ayoub | Software Engineer - Full-Stack .NET Developer">
+    <meta property="og:description"
+        content="Experienced Software Engineer specializing in full-stack development with ASP.NET Core, C#, Angular. 3500+ competitive programming problems solved.">
+    <meta property="og:image" content="https://yousryessam.github.io/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_EG">
+    <meta property="og:site_name" content="Yousry Ayoub Portfolio">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yousryessam.github.io/">
+    <meta name="twitter:title" content="Yousry Ayoub | Software Engineer - Full-Stack .NET Developer">
+    <meta name="twitter:description"
+        content="Experienced Software Engineer specializing in full-stack development with ASP.NET Core, C#, Angular. 3500+ competitive programming problems solved.">
+    <meta name="twitter:image" content="https://yousryessam.github.io/assets/images/og-image.png">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Yousry Ayoub">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="EG-C">
+    <meta name="geo.placename" content="Cairo">
+    <meta name="geo.position" content="30.0444;31.2357">
+    <meta name="ICBM" content="30.0444, 31.2357">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Fonts with display swap for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Yousry's Portfolio website</title>
-    <link rel="icon" href="Icons/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Itim&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-  <body id="mainBody">
-    <div id="progress-bar"></div>
-    <header>
-      <a href="#" class="logo"> Yousry's Portfolio </a>
-      <nav>
-        <a href="#home" id="home-link"> HOME</a>
-        <a href="#education" id="education-link"> EDUCATION</a>
-        <a href="#experience" id="experience-link"> EXPERIENCE</a>
-        <a href="#projects" id="projects-link"> PROJECTS</a>
-        <a href="#achievements" id="achievements-link"> ACHIEVEMENTS</a>
-        <a href="#volunteering" id="volunteering-link"> VOLUNTEERING</a>
-        <a href="#skills" id="skills-link"> SKILLS</a>
-        <a href="#contact" id="contact-link">CONTACT US</a>
-      </nav>
-    </header>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <section id="home" class="home">
-      <div class="home-img">
-        <img src="Images/YousryEssam.jpg" alt="Yousry Essam" />
-      </div>
-      <div class="home-content">
-        <br />
-        <br />
-        <h1>Hello, I'm <span id="myName">Yousry Essam</span></h1>
-        <h3 class="typing-text">
-          I'm a
-          <!-- <br/> -->
-          <span></span>
-        </h3>
-        <br />
-        <br />
-        <br />
-        <p>
-          I am a highly motivated Computer Science graduate from Assiut
-          University with expertise in C, C++, Java, Python, Go, and C#. I have
-          successfully delivered innovative projects, including AI-generated
-          audiobooks and distributed banking systems, applying advanced
-          technologies like Emotional Text-to-Speech (ETTS) and machine
-          learning. My competitive programming background has earned me high
-          rankings in national contests, and I actively mentor students in C++
-          and problem-solving. I thrive in collaborative environments and am
-          eager to contribute to dynamic software engineering teams.
-        </p>
-        <div class="social-icons">
-          <a href="tel:+201289529751" target="_blank">
-            <i class="fa-solid fa-phone"></i
-          ></a>
-          <a href="mailto:youssry.essam2111@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/yousryessam" target="_blank">
-            <i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/YousryEssam" target="_blank">
-            <i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://twitter.com/Yousry__Essam" target="_blank">
-            <i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/yousry__essam" target="_blank">
-            <i class="fa-brands fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.hackerrank.com/profile/Yousry_Essam"
-            target="_blank"
-          >
-            <i class="fa-brands fa-hackerrank"></i
-          ></a>
-          <a href="https://www.youtube.com/@Yousry_Essam" target="_blank">
-            <i class="fa-brands fa-youtube"></i
-          ></a>
-        </div>
-        <a
-          href="https://drive.google.com/drive/folders/1Z73y3BaZLPars2UJrMFBgqyng6VEb1lJ?usp=sharing"
-          class="btn"
-          target="_blank"
-          >See My Resume</a
-        >
-      </div>
-    </section>
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yousry Essam Ayoub",
+        "alternateName": "Yousry Ayoub",
+        "url": "https://yousryessam.github.io/",
+        "image": "https://yousryessam.github.io/assets/images/profile.jpg",
+        "description": "Software Engineer with strong problem-solving skills, experienced in developing full-stack applications with .NET technologies. Solved 3500+ competitive programming problems.",
+        "jobTitle": "Software Engineer",
+        "worksFor": [
+            {
+                "@type": "Organization",
+                "name": "Toq Information Technology",
+                "url": "https://toqit.com"
+            },
+            {
+                "@type": "Organization",
+                "name": "IPMagiX"
+            }
+        ],
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Information Technology Institute (ITI)",
+                "url": "https://iti.gov.eg"
+            },
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Assiut University",
+                "url": "https://www.aun.edu.eg"
+            }
+        ],
+        "knowsAbout": [
+            "ASP.NET Core",
+            "C#",
+            ".NET",
+            "Angular",
+            "Entity Framework Core",
+            "SQL Server",
+            "RESTful APIs",
+            "Competitive Programming",
+            "Algorithms",
+            "Data Structures"
+        ],
+        "sameAs": [
+            "https://github.com/YousryEssam",
+            "https://linkedin.com/in/yousryessam"
+        ],
+        "email": "mailto:yousry.essam.ayoub@gmail.com",
+        "telephone": "+20-1289-529-751",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cairo",
+            "addressCountry": "EG"
+        },
+        "nationality": {
+            "@type": "Country",
+            "name": "Egypt"
+        }
+    }
+    </script>
 
-    <section id="education" class="education">
-      <h2>Education</h2>
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yousryessam.github.io/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://yousryessam.github.io/#about"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Projects",
+                "item": "https://yousryessam.github.io/#projects"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contact",
+                "item": "https://yousryessam.github.io/#contact"
+            }
+        ]
+    }
+    </script>
 
-      <div class="education-content">
-        <div class="education-info">
-          <h3>
-            <strong
-              >Professional Web Development & BI-Infused CRM Trainee</strong
-            >
-          </h3>
-          <p>Professional Training Scholarships 9–Month Program</p>
-          <p>Information Technology Institute (ITI) - Assiut branche</p>
-          <p>Oct 2024 – Now | Assiut, Egypt</p>
-        </div>
-        <div class="education-img">
-          <a href="https://iti.gov.eg/home" target="_blank">
-            <img src="Images/ITI-Logo-Dark.png" alt="ITI Logo" id="ITI-Logo"
-          /></a>
-        </div>
-      </div>
+    <!-- WebSite Structured Data for Sitelinks Search Box -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Yousry Ayoub Portfolio",
+        "url": "https://yousryessam.github.io/",
+        "description": "Personal portfolio of Yousry Ayoub, Software Engineer specializing in .NET development",
+        "author": {
+            "@type": "Person",
+            "name": "Yousry Essam Ayoub"
+        }
+    }
+    </script>
+</head>
 
-      <div class="education-content">
-        <div class="education-info">
-          <h3>
-            <strong>Bachelor's degree in Computer Science</strong>
-          </h3>
-          <p>
-            Faculty of Computer Science and Information Technology - Assiut
-            University
-          </p>
-          <p>Oct 2020 – Jul 2024 | Assiut, Egypt</p>
-        </div>
-        <div class="education-img" id="aun-logo">
-          <a href="https://www.aun.edu.eg/main" target="_blank"
-            ><img src="Images/aun-logo.png" alt="ITI Logo"
-          /></a>
-        </div>
-      </div>
-    </section>
 
-    <section id="experience" class="experience">
-      <br />
-      <br />
-      <br />
-      <h2>Experience</h2>
-      <div class="experience-content">
-        <h3>Petra Software Ind, Summer Internship</h3>
-        <p><strong>July 2023 – August 2023 | Assiut, Egypt</strong></p>
-        <ul>
-          <li>
-            Designed and managed MySQL databases for real-world client
-            applications, implementing scalable schemas that supported efficient
-            data storage and retrieval.
-          </li>
-          <li>
-            Optimized SQL queries, reducing database query execution time by
-            25%, resulting in faster load times and improved performance for
-            high-traffic applications.
-          </li>
-          <li>
-            Automated daily database updates using SQL scripts, increasing data
-            accuracy by 15% and ensuring smooth synchronization between multiple
-            databases.
-          </li>
-          <li>
-            Collaborated with the development team to identify and resolve
-            database bottlenecks, improving the overall system reliability and
-            responsiveness.
-          </li>
-          <li>
-            Successfully managed multiple assignments concurrently, delivering
-            accurate and timely updates to the production databases with zero
-            reported data inconsistencies.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <h2>My Projects</h2>
-      <div class="projects-content">
-        <div class="project-item">
-          <h3>ShahraZad (<strong>Graduation Project, A+ Grade</strong>)</h3>
-          <div class="project-description">
-            <p>
-              ShahraZad is an innovative audiobook service that transforms any
-              story or book into an engaging audio experience through an
-              advanced Emotional Text-to-Speech (ETTS) system. ETTS not only
-              reads the text but also analyzes emotions and adjusts the
-              narration to offer expressive storytelling. Additionally,
-              ShahraZad leverages voice cloning technology, allowing users to
-              enjoy their favorite stories narrated by well-known voices, adding
-              a personalized touch. The platform also supports Arabic books,
-              with plans to introduce emotional expression for this language in
-              the future.
-            </p>
-          </div>
-          <div class="project-tools">
-            <h4>Tools & Technologies:</h4>
-            <ul>
-              <li>GIT</li>
-              <li>MySQL</li>
-              <li>GitHub</li>
-              <li>Flutter</li>
-              <li>FastAPI</li>
-              <li>Python</li>
-              <li>Emotional TTS</li>
-              <li>Deep learning</li>
-              <li>Machine learning</li>
-            </ul>
-          </div>
-          <a href="https://youtu.be/NjkjBzdcSJI">View Project Demo</a>
-        </div>
-
-        <div class="project-item">
-          <h3>My Resume Website</h3>
-          <div class="project-description">
-            <p>
-              A responsive personal website built to showcase my skills,
-              projects, and achievements. Developed using HTML, CSS, and
-              JavaScript, it features a clean, user-friendly design and is
-              optimized for both desktop and mobile devices.
-            </p>
-          </div>
-          <div class="project-tools">
-            <h4>Tools & Technologies:</h4>
-            <ul>
-              <li>Git</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>GitHub Pages</li>
-            </ul>
-          </div>
-          <a
-            href="https://github.com/YousryEssam/MyResumeWebsite"
-            target="_blank"
-            >View Project Repo</a
-          >
-          <br />
-          <a
-            href="https://yousryessam.github.io/MyResumeWebsite/"
-            target="_blank"
-            >See Online DEMO</a
-          >
-        </div>
-
-        <div class="project-item">
-          <h3>Distributed Simple ATM System</h3>
-          <div class="project-description">
-            <p>
-              A Go-based distributed banking ATM system using master-slave
-              architecture for efficient transactions.
-            </p>
-          </div>
-          <div class="project-tools">
-            <h4>Tools & Technologies:</h4>
-            <ul>
-              <li>Git</li>
-              <li>MySQL</li>
-              <li>GitHub</li>
-              <li>Go (Golang)</li>
-              <li>Network programming</li>
-            </ul>
-          </div>
-          <a
-            href="https://github.com/YousryEssam/Distributed-System-Using-Golang"
-            target="_blank"
-            >View Project</a
-          >
-        </div>
-
-        <div class="project-item">
-          <h3>Devices Price Classification System</h3>
-          <div class="project-description">
-            <p>
-              A machine learning model classifying electronic devices into price
-              ranges based on features like brand and specifications.
-            </p>
-          </div>
-          <div class="project-tools">
-            <h4>Tools & Technologies:</h4>
-            <ul>
-              <li>Python</li>
-              <li>NumPy</li>
-              <li>Pandas</li>
-              <li>scikit-learn</li>
-              <li>Jupyter Notebook</li>
-              <li>Machine Learning Algorithms</li>
-            </ul>
-          </div>
-          <a
-            href="https://github.com/YousryEssam/Devices-Price-Classification-System"
-            target="_blank"
-            >View Project</a
-          >
-        </div>
-
-        <div class="project-item">
-          <h3>Endless Runner Game with Unity</h3>
-          <div class="project-description">
-            <p>
-              A Unity-based endless runner game featuring randomly generated
-              obstacles and dynamic gameplay.
-            </p>
-          </div>
-          <div class="project-tools">
-            <h4>Tools & Technologies:</h4>
-            <ul>
-              <li>C#</li>
-              <li>Git</li>
-              <li>Unity</li>
-              <li>Visual Studio</li>
-              <li>Unity Asset Store</li>
-            </ul>
-          </div>
-          <a
-            href="https://github.com/YousryEssam/Endless-runner-game-with-unity"
-            target="_blank"
-            >View Project</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements" class="achievements">
-      <br />
-      <br />
-      <br />
-      <h2>Achievements</h2>
-      <div class="achievements-content">
-        <div class="achievement-item">
-          <h3>51st Place at the ECPC 2024 Finals</h3>
-          <p>
-            Out of 397 teams in the Egyptian Collegiate Programming Contest
-            finals.
-          </p>
-          <img src="Images/ECPC 2024.jpg" alt="ECPC 2024 Finals team" />
-          <a
-            href="https://drive.google.com/file/d/1K3ZtpTiUhbTCrFIHaLNg5bhTXVzVr-11/view"
-            target="_blank"
-            >View Certificate</a
-          >
-        </div>
-
-        <div class="achievement-item">
-          <h3>29th Place at the ECPC 2024 Qualifications</h3>
-          <p>Out of 447 teams on day 6.</p>
-          <img src="Images/ECPC 2024.jpg" alt="ECPC 2024 Qualifications team" />
-          <a
-            href="https://drive.google.com/file/d/1tfS3Hd6plaOlQWEIeAB-iJz9CO8KecZv/view"
-            target="_blank"
-            >View Certificate</a
-          >
-        </div>
-
-        <div class="achievement-item">
-          <h3>22nd Place at the ECPC 2023 Qualifications</h3>
-          <p>Out of 235 teams on day 10.</p>
-          <img src="Images/ECPC2023.JPG" alt="ECPC 2023 Qualifications team" />
-          <a
-            href="https://drive.google.com/file/d/1HJkiI1zEoqpDb47EB7k88fZ7auuNMJdD/view"
-            target="_blank"
-            >View Certificate</a
-          >
-        </div>
-
-        <div class="achievement-item">
-          <h3>24th Place at the ECPC 2022 Qualifications</h3>
-          <p>Out of 237 teams.</p>
-          <img src="Images/ECPC2022.JPG" alt="ECPC 2022 Qualifications team" />
-          <a
-            href="https://drive.google.com/file/d/1z-8NcnmrvZB57uoht5Q6zQyfIDz9Nn6i/view"
-            target="_blank"
-            >View Certificate</a
-          >
-        </div>
-        <div class="achievement-item">
-          <h3>43rd Place at the ECPC 2021 Qualifications</h3>
-          <p>Out of 120 teams.</p>
-          <img src="Images/ECPC2021.JPG" alt="ECPC 2021 Qualifications team" />
-          <a
-            href="https://drive.google.com/file/d/1dxbtr9M28KRWtOHWUxRfEZ8kqi5gGegU/view?usp=sharing"
-            target="_blank"
-            >View Certificate</a
-          >
-        </div>
-        <div class="achievement-item">
-          <h3>19th Place at the Programming Warfare 2023</h3>
-          <p>Out of 150 teams in Upper Egypt Programming Competition.</p>
-          <img
-            src="Images/PWD.jpg"
-            alt=" Programming Warfare 2023 || Upper Egypt Programming Competition team"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="volunteering" id="volunteering">
-      <br />
-      <br />
-      <br />
-      <h2>Volunteering</h2>
-      <div class="volunteering-content">
-        <div class="volunteering-item">
-          <h3>ICPC EELU Community, Instructor & Mentor</h3>
-          <p>Mar 2024 – Jun 2024 | Assiut, Egypt</p>
-          <p>
-            Designed and delivered comprehensive programming workshops to
-            enhance students' C++ proficiency and problem-solving abilities.
-            Focused on teaching algorithmic techniques and data structures,
-            preparing participants for prestigious competitions like the ICPC.
-            Provided hands-on mentorship, guiding students through complex
-            coding challenges, algorithm design, and competitive programming
-            strategies. Offered personalized support to improve students'
-            performance on competitive programming platforms, fostering their
-            confidence and skill growth. Let me know if this works or needs
-            further tweaking!
-          </p>
-        </div>
-        <div class="volunteering-item">
-          <h3>ICPC Assiut Community, Mentor for C++ and Problem Solving</h3>
-          <p>Oct 2021 – Jun 2024 | Assiut, Egypt</p>
-          <p>
-            Mentored students in mastering C++ programming, problem-solving, and
-            competitive programming skills with a focus on preparing for
-            contests like the ICPC. Developed and conducted training sessions on
-            advanced algorithms, data structures, and efficient coding
-            techniques. Collaborated closely with students to enhance their
-            problem-solving capabilities, refine their coding practices, and
-            improve their performance on competitive programming platforms.
-            Emphasized strategic thinking, code optimization, and practical
-            application, fostering confidence and excellence in programming
-            competitions.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <h3>Basics</h3>
-          <ul>
-            <li>Algorithms</li>
-            <li>Data Structures</li>
-            <li>Testing & Debugging</li>
-            <li>problem-solving Skills</li>
-            <li>OOP (Object-Oriented Programming)</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>Go</li>
-            <li>SQL</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Tools</h3>
-          <ul>
-            <li>Git</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>MySQL</li>
-            <li>Visual Studio</li>
-            <li>Visual Studio Code</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Teamwork</li>
-            <li>Mentoring</li>
-            <li>Leadership</li>
-            <li>Communication Skills</li>
-            <li>Working under Pressure</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-us" id="contact">
-      <h2 class="section-title">Contact Us</h2>
-      <div class="contact-container">
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <h3>Get in Touch</h3>
-          <p>
-            Email:
-            <a href="mailto:yousry.essam.ayoub@gmail.com" target="_blank">
-              yousry.essam.ayoub@gmail.com
-            </a>
-          </p>
-          <p>Location: Egypt</p>
-        </div>
-        <!-- Contact Form -->
-        <div class="contact-form">
-          <form action="#" method="post">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
-              />
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <a href="#" class="nav-logo">Yousry<span>.</span></a>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+                    <li><a href="#awards" class="nav-link" data-i18n="nav.awards">Awards</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg>
+                    </button>
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">عربي</button>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Enter your message"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
+            <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </div>
-      </div>
-    </section>
+        <div class="nav-overlay"></div>
+    </nav>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-content">
-          <h3>Yousry Essam Ayoub</h3>
-          <p>
-            ITI Trainee | Computer Science Graduate | Competitive Programmer |
-            Software Developer
-          </p>
-          <p>&copy; 2024 All Rights Reserved</p>
+    <main id="main">
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge"><span data-i18n="hero.badge">Available for opportunities</span></div>
+                    <h1 class="hero-title"><span data-i18n="hero.greeting">Hello, I'm</span><br><span
+                            class="gradient-text" data-i18n="hero.name">Yousry Ayoub</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Full-Stack Developer & Problem Solver</p>
+                    <p class="hero-description" data-i18n="hero.description">Software Engineer with strong
+                        problem-solving skills. Experienced in developing full-stack applications with .NET
+                        technologies.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary btn-lg" data-i18n="hero.cta_primary">View My Work</a>
+                        <a href="assets/documents/Yousry_Ayoub_Software_Engineer_Resume.pdf" download
+                            class="btn btn-secondary btn-lg" data-i18n="hero.cta_secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Download CV
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item"><span class="stat-value" data-count="3500" data-suffix="+">0</span><span
+                                class="stat-label" data-i18n="hero.stat_problems">Problems Solved</span></div>
+                        <div class="stat-item"><span class="stat-value" data-count="2" data-suffix="+">0</span><span
+                                class="stat-label" data-i18n="hero.stat_experience">Years Experience</span></div>
+                        <div class="stat-item"><span class="stat-value" data-count="7" data-suffix="+">0</span><span
+                                class="stat-label" data-i18n="hero.stat_projects">Projects Built</span></div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-scale">
+                    <div class="hero-bg-decoration"></div>
+                    <div class="hero-image-wrapper">
+                        <img src="assets/images/Yousry.jpg" alt="Yousry Ayoub - Software Engineer" class="hero-image">
+                    </div>
+                    <div class="hero-float hero-float-1">
+                        <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg></div>
+                        <div class="hero-float-text">.NET Developer<span>Full-Stack</span></div>
+                    </div>
+                    <div class="hero-float hero-float-2">
+                        <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                            </svg></div>
+                        <div class="hero-float-text">3500+ Problems<span>Solved</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle" data-i18n="about.subtitle">About Me</span>
+                    <h2 class="section-title" data-i18n="about.title">Passionate Software Engineer</h2>
+                </div>
+                <div class="about-container">
+                    <div class="about-content reveal-left">
+                        <div class="about-text">
+                            <p data-i18n="about.description">Software Engineer with strong problem-solving skills and a
+                                solid grasp of software engineering principles and competitive programming. Experienced
+                                in developing full-stack applications with .NET technologies, solving complex problems,
+                                and solved more than +3500 problems on various online judges.</p>
+                            <p data-i18n="about.description2">Quick to learn new technologies and focused on writing
+                                clean, maintainable code. Looking to contribute to a collaborative tech team while
+                                continuing to grow professionally.</p>
+                        </div>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg></div>
+                                <div><span class="info-label" data-i18n="about.info_location">Location</span><span
+                                        class="info-value">Cairo, Egypt</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg></div>
+                                <div><span class="info-label" data-i18n="about.info_email">Email</span><span
+                                        class="info-value">yousry.essam.ayoub@gmail.com</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg></div>
+                                <div><span class="info-label" data-i18n="about.info_phone">Phone</span><span
+                                        class="info-value">+20 1289 529 751</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg></div>
+                                <div><span class="info-label" data-i18n="about.info_status">Status</span><span
+                                        class="info-value">Ready to relocate</span></div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/YousryEssam" target="_blank" class="social-link"
+                                aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg></a>
+                            <a href="https://linkedin.com/in/yousryessam" target="_blank" class="social-link"
+                                aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg></a>
+                            <a href="mailto:yousry.essam.ayoub@gmail.com" class="social-link" aria-label="Email"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="skills-section reveal-right">
+                        <h3 data-i18n="about.skills_title">Technical Skills</h3>
+                        <div class="skills-tabs">
+                            <button class="skill-tab active" data-tab="backend">Backend</button>
+                            <button class="skill-tab" data-tab="frontend">Frontend</button>
+                            <button class="skill-tab" data-tab="languages">Languages</button>
+                            <button class="skill-tab" data-tab="tools">Tools</button>
+                        </div>
+                        <div class="skills-content active" data-content="backend">
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">ASP.NET Core</span><span
+                                        class="skill-level">90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">Entity Framework Core</span><span
+                                        class="skill-level">85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">RESTful APIs</span><span
+                                        class="skill-level">90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">SignalR</span><span
+                                        class="skill-level">75%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-content" data-content="frontend">
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">Angular</span><span
+                                        class="skill-level">80%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">HTML5 / CSS3</span><span
+                                        class="skill-level">90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">JavaScript</span><span
+                                        class="skill-level">85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">Bootstrap</span><span
+                                        class="skill-level">85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-content" data-content="languages">
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">C#</span><span
+                                        class="skill-level">95%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">C++</span><span
+                                        class="skill-level">90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">Python</span><span
+                                        class="skill-level">75%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">SQL</span><span
+                                        class="skill-level">85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-content" data-content="tools">
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">Git & GitHub</span><span
+                                        class="skill-level">90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">Visual Studio</span><span
+                                        class="skill-level">95%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">SQL Server</span><span
+                                        class="skill-level">85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span class="skill-name">Postman / Swagger</span><span
+                                        class="skill-level">85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle" data-i18n="experience.subtitle">Work Experience</span>
+                    <h2 class="section-title" data-i18n="experience.title">My Professional Journey</h2>
+                </div>
+                <div class="experience-timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-logo-wrapper">
+                                    <img src="assets/images/Toq-Logo.svg" alt="Toq Information Technology"
+                                        class="timeline-logo">
+                                </div>
+                                <div class="timeline-header-content">
+                                    <div>
+                                        <h3 class="timeline-title">Junior Software Engineer</h3><span
+                                            class="timeline-company">Toq Information Technology</span>
+                                    </div>
+                                    <div class="timeline-meta"><span class="timeline-date">Nov 2025 –
+                                            Present</span><span class="timeline-location">Riyadh, SA · Remote</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="timeline-description">
+                                <li>Developing full-stack web applications using ASP.NET MVC, ASP.NET Core, C#</li>
+                                <li>Building responsive UI components using Angular</li>
+                                <li>Implementing APIs and back-end features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-logo-wrapper">
+                                    <img src="assets/images/IPMagiX-logo.png" alt="IPMagiX" class="timeline-logo">
+                                </div>
+                                <div class="timeline-header-content">
+                                    <div>
+                                        <h3 class="timeline-title">Software Engineer</h3><span
+                                            class="timeline-company">IPMagiX</span>
+                                    </div>
+                                    <div class="timeline-meta"><span class="timeline-date">Jun 2025 –
+                                            Present</span><span class="timeline-location">Cairo, Egypt · Remote</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="timeline-description">
+                                <li>Developing and maintaining software using .NET technologies</li>
+                                <li>Working on ASP.NET Core and Entity Framework projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-logo-wrapper">
+                                    <img src="assets/images/Petra-Software.png" alt="Petra Software Industries"
+                                        class="timeline-logo">
+                                </div>
+                                <div class="timeline-header-content">
+                                    <div>
+                                        <h3 class="timeline-title">Summer Internship</h3><span
+                                            class="timeline-company">Petra Software Industries</span>
+                                    </div>
+                                    <div class="timeline-meta"><span class="timeline-date">Jul – Aug 2023</span><span
+                                            class="timeline-location">Assiut, Egypt</span></div>
+                                </div>
+                            </div>
+                            <ul class="timeline-description">
+                                <li>Designed databases using MySQL</li>
+                                <li>Wrote efficient SQL queries</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle" data-i18n="projects.subtitle">Featured Projects</span>
+                    <h2 class="section-title" data-i18n="projects.title">Things I've Built</h2>
+                </div>
+                <div class="projects-grid stagger-children">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Sharazad-Logo.png" alt="ShahraZad - AI Story to Audio App"
+                                loading="lazy">
+                        </div>
+                        <div class="project-content"><span class="badge badge-success">Graduation Project - A+</span>
+                            <h3 class="project-title">ShahraZad</h3>
+                            <p class="project-description">Cross-platform app converting stories to expressive audio
+                                using
+                                deep learning with emotional TTS and Arabic/English support.</p>
+                            <div class="project-tech"><span class="tag">Flutter</span><span
+                                    class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Deep
+                                    Learning</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Fit-4-Job.jpg" alt="Fit4Job - Recruitment Platform" loading="lazy">
+                        </div>
+                        <div class="project-content"><span class="badge badge-primary">Full-Stack</span>
+                            <h3 class="project-title">Fit4Job</h3>
+                            <p class="project-description">Recruitment platform with advanced job search, applicant
+                                tracking, and skill-based matching.</p>
+                            <div class="project-tech"><span class="tag">ASP.NET Web API</span><span class="tag">EF
+                                    Core</span><span class="tag">SQL Server</span><span class="tag">JWT</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Bloo-Logo.jpg" alt="BlOO - Social Media Platform" loading="lazy">
+                        </div>
+                        <div class="project-content"><span class="badge badge-secondary">Social Media</span>
+                            <h3 class="project-title">BlOO</h3>
+                            <p class="project-description">Social platform with real-time messaging, post sharing, and
+                                responsive design.</p>
+                            <div class="project-tech"><span class="tag">ASP.NET MVC</span><span
+                                    class="tag">SignalR</span><span class="tag">EF Core</span><span
+                                    class="tag">JavaScript</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/TrendOra-Logo.jpg" alt="TrendOra - E-Commerce Platform"
+                                loading="lazy">
+                        </div>
+                        <div class="project-content"><span class="badge badge-accent">E-Commerce</span>
+                            <h3 class="project-title">TrendOra</h3>
+                            <p class="project-description">RESTful APIs for e-commerce with 3 user roles, product
+                                management, and order tracking.</p>
+                            <div class="project-tech"><span class="tag">ASP.NET Web API</span><span class="tag">EF
+                                    Core</span><span class="tag">JWT</span><span class="tag">Swagger</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Dynamic-CMS-Logo.png" alt="Dynamic CMS Platform" loading="lazy">
+                        </div>
+                        <div class="project-content"><span class="badge badge-primary">CMS Platform</span>
+                            <h3 class="project-title">Dynamic CMS</h3>
+                            <p class="project-description">WordPress-like CMS with RESTful APIs for content management
+                                and
+                                scalable architecture.</p>
+                            <div class="project-tech"><span class="tag">ASP.NET Core</span><span class="tag">EF
+                                    Core</span><span class="tag">SQL Server</span><span class="tag">REST</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/ToDo-App.jpg" alt="Todo App - Task Management" loading="lazy">
+                        </div>
+                        <div class="project-content"><span class="badge">Utility</span>
+                            <h3 class="project-title">Todo App</h3>
+                            <p class="project-description">Task management app with add, filter, delete features, and
+                                light/dark mode.</p>
+                            <div class="project-tech"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">JavaScript</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle" data-i18n="education.subtitle">Education</span>
+                    <h2 class="section-title" data-i18n="education.title">Academic Background</h2>
+                </div>
+                <div class="education-grid">
+                    <div class="education-card reveal-left">
+                        <img src="assets/images/iti-logo.svg" alt="ITI Logo" class="education-logo">
+                        <div class="education-content">
+                            <h3 class="education-degree">9-Month Diploma</h3>
+                            <p class="education-school">Information Technology Institute (ITI)</p>
+                            <p class="education-field">Professional Development & BI-infused CRM</p>
+                            <p class="education-date">Oct 2024 – Jul 2025</p>
+                        </div>
+                    </div>
+                    <div class="education-card reveal-right">
+                        <img src="assets/images/assiut-university-logo.png" alt="Assiut University Logo"
+                            class="education-logo">
+                        <div class="education-content">
+                            <h3 class="education-degree">Bachelor of Computer Science</h3>
+                            <p class="education-school">Assiut University</p>
+                            <p class="education-field">Faculty of Computer Science and Information Technology</p>
+                            <p class="education-date">Oct 2020 – Jul 2024</p>
+                            <span class="education-gpa">GPA: 2.93/4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards" class="awards">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle" data-i18n="awards.subtitle">Awards & Achievements</span>
+                    <h2 class="section-title" data-i18n="awards.title">Recognition & Competitions</h2>
+                </div>
+                <div class="awards-grid stagger-children">
+                    <div class="award-card">
+                        <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg></div>
+                        <h3 class="award-title">ECPC 2024 Finals</h3>
+                        <p class="award-description">Egypt's premier competitive programming contest</p><span
+                            class="award-rank">51st / 397 teams</span>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg></div>
+                        <h3 class="award-title">ECPC 2024 Qualifications</h3>
+                        <p class="award-description">National programming competition qualifier</p><span
+                            class="award-rank">29th / 447 (Top 7%)</span>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg></div>
+                        <h3 class="award-title">ECPC 2023 Qualifications</h3>
+                        <p class="award-description">National programming competition qualifier</p><span
+                            class="award-rank">22nd / 235 (Top 10%)</span>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg></div>
+                        <h3 class="award-title">3500+ Problems Solved</h3>
+                        <p class="award-description">Codeforces, LeetCode, HackerRank</p><span
+                            class="award-rank">Competitive Programmer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteering -->
+        <section id="volunteering" class="volunteering">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle" data-i18n="volunteering.subtitle">Volunteering</span>
+                    <h2 class="section-title" data-i18n="volunteering.title">Community Contributions</h2>
+                </div>
+                <div class="volunteering-grid stagger-children">
+                    <div class="volunteer-card">
+                        <div class="volunteer-header">
+                            <div>
+                                <h3 class="volunteer-role">Problem Solving Training Lead</h3><span
+                                    class="volunteer-org">ITI - Assiut Intake 45</span>
+                            </div><span class="volunteer-date">Oct 2024 – Jul 2025</span>
+                        </div>
+                        <p class="volunteer-description">Led problem-solving training sessions covering algorithms, data
+                            structures, and competitive programming techniques.</p>
+                    </div>
+                    <div class="volunteer-card">
+                        <div class="volunteer-header">
+                            <div>
+                                <h3 class="volunteer-role">Instructor & Mentor</h3><span class="volunteer-org">ICPC EELU
+                                    Community</span>
+                            </div><span class="volunteer-date">Mar 2024 – Jun 2025</span>
+                        </div>
+                        <p class="volunteer-description">Led C++ and problem-solving sessions, created lesson plans, and
+                            mentored students on algorithms and debugging.</p>
+                    </div>
+                    <div class="volunteer-card">
+                        <div class="volunteer-header">
+                            <div>
+                                <h3 class="volunteer-role">Mentor</h3><span class="volunteer-org">ICPC Assiut
+                                    Community</span>
+                            </div><span class="volunteer-date">Oct 2021 – Jun 2024</span>
+                        </div>
+                        <p class="volunteer-description">Guided peers in C++ and algorithms, offering support in
+                            debugging and problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle" data-i18n="contact.subtitle">Get in Touch</span>
+                    <h2 class="section-title" data-i18n="contact.title">Let's Work Together</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info reveal-left">
+                        <p class="contact-text" data-i18n="contact.description">I'm currently looking for new
+                            opportunities. Whether you have a question or just want to say hi, I'll try my best to get
+                            back to you!</p>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg></div><a
+                                    href="mailto:yousry.essam.ayoub@gmail.com">yousry.essam.ayoub@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg></div><a href="tel:+201289529751">+20 1289 529 751</a>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg></div><span>Cairo, Egypt (Ready to relocate)</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/YousryEssam" target="_blank" class="social-link"
+                                aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg></a>
+                            <a href="https://linkedin.com/in/yousryessam" target="_blank" class="social-link"
+                                aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal-right" id="contact-form">
+                        <h3 data-i18n="contact.form_title">Send a Message</h3>
+                        <div class="form-group"><label class="form-label" for="name" data-i18n="contact.form_name">Your
+                                Name</label><input type="text" id="name" class="form-input" required></div>
+                        <div class="form-group"><label class="form-label" for="email"
+                                data-i18n="contact.form_email">Your Email</label><input type="email" id="email"
+                                class="form-input" required></div>
+                        <div class="form-group"><label class="form-label" for="subject"
+                                data-i18n="contact.form_subject">Subject</label><input type="text" id="subject"
+                                class="form-input" required></div>
+                        <div class="form-group"><label class="form-label" for="message"
+                                data-i18n="contact.form_message">Your Message</label><textarea id="message"
+                                class="form-textarea" required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-lg form-submit"
+                            data-i18n="contact.form_submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Yousry<span>.</span></div>
+                <nav class="footer-nav">
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </nav>
+                <div class="social-links">
+                    <a href="https://github.com/YousryEssam" target="_blank" class="social-link"
+                        aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg></a>
+                    <a href="https://linkedin.com/in/yousryessam" target="_blank" class="social-link"
+                        aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Yousry Ayoub. All rights reserved.</p>
+            </div>
         </div>
-        <div class="footer-social-icons">
-          <a href="https://github.com/YousryEssam" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/yousryessam" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://twitter.com/Yousry__Essam" target="_blank"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/yousry__essam" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="mailto:youssry.essam2111@gmail.com" target="_blank"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-        </div>
-      </div>
     </footer>
-    <!-- darkTheme button -->
-    <label class="switch">
-      <input checked="darkTheme" type="checkbox" onclick="darkModeSwitch()" />
-      <div class="slider round">
-        <div class="sun-moon">
-          <svg viewBox="0 0 100 100" class="moon-dot" id="moon-dot-1">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="moon-dot" id="moon-dot-2">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="moon-dot" id="moon-dot-3">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="light-ray" id="light-ray-1">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="light-ray" id="light-ray-2">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="light-ray" id="light-ray-3">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
 
-          <svg viewBox="0 0 100 100" class="cloud-dark" id="cloud-1">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="cloud-dark" id="cloud-2">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="cloud-dark" id="cloud-3">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="cloud-light" id="cloud-4">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="cloud-light" id="cloud-5">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-          <svg viewBox="0 0 100 100" class="cloud-light" id="cloud-6">
-            <circle r="50" cy="50" cx="50"></circle>
-          </svg>
-        </div>
-        <div class="stars">
-          <svg viewBox="0 0 20 20" class="star" id="star-1">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-          <svg viewBox="0 0 20 20" class="star" id="star-2">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-          <svg viewBox="0 0 20 20" class="star" id="star-3">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-          <svg viewBox="0 0 20 20" class="star" id="star-4">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </label>
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Scroll to top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+        </svg></button>
 
-    <script src="Script.js"></script>
-  </body>
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
