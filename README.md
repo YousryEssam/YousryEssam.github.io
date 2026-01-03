@@ -1,15 +1,8 @@
 # Yousry Essam Ayoub | Portfolio
 
 ![Portfolio Preview](assets/images/og-image.png)
-## 📬 Contact
 
-**Yousry Essam Ayoub**
-<p align="center">Made with ❤️ by Yousry Essam Ayoub</p>
-# Yousry Essam Ayoub | Portfolio
-
-![Portfolio Preview](assets/images/og-image.png)
-
-A modern, responsive portfolio website showcasing my skills as a Full-Stack .NET Developer.
+A modern, responsive portfolio website showcasing my skills as a Full-Stack .NET Developer and competitive programmer.
 
 🔗 **Live Demo:** [yousryessam.github.io](https://yousryessam.github.io/)
 
@@ -23,6 +16,8 @@ A modern, responsive portfolio website showcasing my skills as a Full-Stack .NET
 - **Responsive** - Mobile-first design for all screen sizes
 - **Animated UI** - Scroll reveals, 3D tilt effects, shimmer animations
 - **Interactive Elements** - Magnetic hover, ripple clicks, progress indicators
+- **SEO Optimized** - Meta tags, structured data, Open Graph, sitemap
+- **Performance** - Lazy loading, preloading, optimized assets
 
 ---
 
@@ -38,8 +33,11 @@ A modern, responsive portfolio website showcasing my skills as a Full-Stack .NET
 ## 📁 Project Structure
 
 ```
-Portfolio.V3/
+YousryEssam.github.io/
 ├── index.html          # Main HTML file
+├── README.md           # Project documentation
+├── robots.txt          # SEO crawler rules
+├── sitemap.xml         # Site structure for search engines
 ├── css/
 │   ├── variables.css   # Design tokens & theming
 │   ├── base.css        # Reset & typography
@@ -54,8 +52,9 @@ Portfolio.V3/
 │   ├── language.js     # i18n handler
 │   └── translations.js # Translation strings
 ├── assets/
-│   └── images/         # Project images & logos
-└── favicon/            # Favicon files
+│   ├── images/         # Project images & logos
+│   └── documents/      # PDFs, certificates
+└── favicon/            # Favicon files & webmanifest
 ```
 
 ---
@@ -96,14 +95,40 @@ Edit `css/variables.css`:
 
 | Section | Description |
 |---------|-------------|
-| Hero | Introduction with animated profile |
+| Hero | Introduction with animated profile & stats |
 | About | Bio, skills with tabbed categories |
-| Experience | Work history timeline |
-| Projects | Featured project cards |
+| Experience | Professional journey timeline with enhanced card design |
+| Projects | 8 featured project cards with overlay CTAs |
 | Education | Academic background |
-| Awards | Achievements & competitions |
+| Competitive Programming | Contest achievements & rankings (6 competitions) |
 | Volunteering | Community contributions |
 | Contact | Form & social links |
+
+---
+
+## 🎯 Featured Projects
+
+1. **ShahraZad** - AI Story to Audio App (Graduation Project - A+)
+   - Flutter, FastAPI, Python, Deep Learning
+
+2. **Fit4Job** - Recruitment Platform
+   - ASP.NET Web API, EF Core, SQL Server, JWT
+
+3. **BlOO** - Social Media Platform
+   - ASP.NET MVC, SignalR, EF Core, JavaScript
+
+4. **TrendOra** - E-Commerce Platform
+   - ASP.NET Web API, EF Core, JWT, Swagger
+
+5. **Dynamic CMS** - Content Management System
+   - ASP.NET Core, EF Core, SQL Server, REST
+
+6. **VaultWise** - Personal Finance Manager
+   - ASP.NET Core 8.0 MVC, EF Core 8.0, SQL Server, Bootstrap 5, Chart.js, Clean Architecture
+   - Features: User authentication, account management, transaction tracking, budget management, recurring transactions, financial dashboard
+
+7. **Todo App** - Task Management
+   - HTML5, CSS3, JavaScript
 
 ---
 
