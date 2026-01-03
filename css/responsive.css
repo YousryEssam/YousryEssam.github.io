@@ -447,3 +447,172 @@
         justify-content: flex-start;
     }
 }
+
+/* ===== Mobile UX Enhancements ===== */
+@media (max-width: 768px) {
+    /* Improved touch targets */
+    .nav-link,
+    .social-link,
+    .skill-tab,
+    .contact-item a {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Better readability on mobile */
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .section-title {
+        font-size: 1.875rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    /* Improved project cards for mobile */
+    .projects-grid {
+        gap: 1.5rem;
+    }
+    
+    .project-card {
+        border-radius: var(--radius-lg);
+        overflow: visible;
+    }
+    
+    .project-image {
+        margin-bottom: 1rem;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Better form elements on mobile */
+    input,
+    textarea,
+    select {
+        font-size: 16px !important; /* Prevents zoom on iOS */
+        padding: 0.875rem 1rem;
+    }
+    
+    /* Improved button spacing */
+    .hero-buttons,
+    .project-actions {
+        gap: 0.75rem;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    /* Better stats display */
+    .hero-stats {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .stat-item {
+        flex: 1 1 calc(50% - 0.5rem);
+        min-width: 120px;
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+    }
+    
+    /* Improved timeline on mobile */
+    .timeline-item {
+        padding-left: 2rem;
+    }
+    
+    .timeline-item::before {
+        left: 0.5rem;
+    }
+    
+    /* Better contact form spacing */
+    .contact-form .form-group {
+        margin-bottom: 1.25rem;
+    }
+    
+    /* Scroll padding for anchor links */
+    html {
+        scroll-padding-top: 80px;
+    }
+    
+    /* Prevent text selection on buttons */
+    .btn,
+    .nav-toggle,
+    .theme-toggle,
+    .lang-toggle {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        user-select: none;
+    }
+}
+
+/* ===== Extra Small Mobile (380px and below) ===== */
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn-lg {
+        padding: var(--space-3) var(--space-4);
+        font-size: var(--text-sm);
+    }
+    
+    .stat-item {
+        flex: 1 1 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .project-actions {
+        flex-direction: column;
+    }
+    
+    .project-actions .btn {
+        width: 100%;
+    }
+}
+
+/* ===== Hover Effects Optimization for Touch Devices ===== */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .btn:hover::before,
+    .card:hover,
+    .project-card:hover {
+        animation: none;
+        transform: none;
+    }
+    
+    /* Show overlays by default on touch */
+    .project-overlay {
+        opacity: 1;
+        background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, transparent 60%);
+    }
+    
+    /* Better active states for touch */
+    .btn:active {
+        transform: scale(0.97);
+    }
+    
+    .card:active,
+    .project-card:active {
+        transform: translateY(2px);
+    }
+}
