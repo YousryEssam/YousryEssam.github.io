@@ -1114,7 +1114,186 @@
     border-radius: var(--radius-full);
 }
 
-/* ===== Awards Section ===== */
+/* ===== Competitive Programming Section ===== */
+.competitive-programming {
+    background: var(--bg-secondary);
+}
+
+.cp-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: var(--surface-glass);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-400);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+}
+
+.cp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-8);
+}
+
+.cp-card {
+    background: var(--bg-card);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.cp-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-400);
+    box-shadow: 0 12px 32px rgba(99, 102, 241, 0.2);
+}
+
+.cp-image {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: var(--bg-secondary);
+}
+
+.cp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.cp-card:hover .cp-image img {
+    transform: scale(1.05);
+}
+
+.cp-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 0.875rem;
+    backdrop-filter: blur(8px);
+    z-index: 2;
+}
+
+.cp-content {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    flex: 1;
+}
+
+.cp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.cp-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    margin: 0;
+    flex: 1;
+}
+
+.cp-rank {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+}
+
+.cp-description {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cp-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--surface-border);
+}
+
+.cp-date {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text-tertiary);
+    font-size: var(--text-sm);
+}
+
+.cp-date svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Mobile optimizations for CP cards */
+@media (max-width: 768px) {
+    .cp-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .cp-image {
+        height: 200px;
+    }
+    
+    .cp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cp-rank {
+        font-size: 1.125rem;
+    }
+    
+    .cp-meta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .cp-meta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+}
+
+/* ===== Awards Section (Legacy - kept for compatibility) ===== */
 .awards {
     background: var(--bg-secondary);
 }
