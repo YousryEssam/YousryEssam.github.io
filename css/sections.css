@@ -661,6 +661,7 @@
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-sm);
 }
 
 .timeline-content::before {
@@ -673,6 +674,20 @@
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none;
+}
+
+/* Left gradient accent edge */
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, var(--primary-500), var(--secondary-500));
+    opacity: 0.7;
+    border-top-left-radius: var(--radius-2xl);
+    border-bottom-left-radius: var(--radius-2xl);
 }
 
 .timeline-content:hover::before {
@@ -692,8 +707,17 @@
 .timeline-header {
     display: flex;
     gap: var(--space-5);
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: var(--space-6);
+}
+
+/* Ensure header content takes remaining space */
+.timeline-header-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    flex: 1;
 }
 
 .timeline-title {
@@ -713,8 +737,10 @@
 .timeline-meta {
     margin-top: var(--space-2);
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: center;
 }
 
 .timeline-date {
@@ -725,7 +751,6 @@
     padding: var(--space-1) var(--space-3);
     border-radius: var(--radius-full);
     border: 1px solid var(--surface-border);
-    margin-bottom: var(--space-1);
 }
 
 .timeline-location {
@@ -781,6 +806,33 @@
     padding: 8px;
     box-shadow: var(--shadow-md);
     flex-shrink: 0;
+    position: relative;
+}
+
+/* Subtle gradient ring on hover */
+.timeline-logo-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: var(--radius-xl);
+    padding: 2px;
+    background: linear-gradient(135deg, var(--primary-400), transparent 60%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.timeline-content:hover .timeline-logo-wrapper::after {
+    opacity: 1;
+}
+
+/* Logo sizing */
+.timeline-logo {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
 /* ===== Projects Section ===== */
