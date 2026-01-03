@@ -1,6 +1,6 @@
 /* ============================================
    Translations - English & Arabic
-   Portfolio Website for Yousry Essam Ayoub
+  Portfolio Website for Yousry Essam Ayoub
    ============================================ */
 
 const translations = {
@@ -20,7 +20,7 @@ const translations = {
     hero: {
       badge: "Available for opportunities",
       greeting: "Hello, I'm",
-      name: "Yousry Ayoub",
+      name: "Yousry Essam Ayoub",
       title: "Software Engineer",
       subtitle: "Full-Stack Developer & Problem Solver",
       description: "Software Engineer with strong problem-solving skills and a solid grasp of software engineering principles. Experienced in developing full-stack applications with .NET technologies.",

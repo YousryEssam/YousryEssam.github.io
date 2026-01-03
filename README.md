@@ -1,4 +1,11 @@
-# Yousry Ayoub | Portfolio
+# Yousry Essam Ayoub | Portfolio
+
+![Portfolio Preview](assets/images/og-image.png)
+## 📬 Contact
+
+**Yousry Essam Ayoub**
+<p align="center">Made with ❤️ by Yousry Essam Ayoub</p>
+# Yousry Essam Ayoub | Portfolio
 
 ![Portfolio Preview](assets/images/og-image.png)
 
@@ -115,4 +122,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Made with ❤️ by Yousry Ayoub</p>
+<p align="center">Made with ❤️ by Yousry Essam Ayoub</p>
